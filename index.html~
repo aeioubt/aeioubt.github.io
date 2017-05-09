@@ -28,7 +28,7 @@ $(document).ready(function(){
 <!-- Page1 -->
 
 <div class="container" style="margin-top: 0px;">
-<p style="padding-left: 500px; margin-top: -20px; color: #DADADA;">v.2.5</p>
+<p style="padding-left: 500px; margin-top: -50px; color: #DADADA;">v.2.5</p>
 
 
 
@@ -1588,7 +1588,7 @@ style='font-size:8.0pt;line-height:115%;font-family:"Times New Roman",serif;
 color:#D9D9D9'>)</span><span style='font-family:"Times New Roman",serif;
 color:#D9D9D9'> </span><span style='font-size:8.0pt;line-height:115%;
 font-family:"Times New Roman",serif'>http://histans.com/EHU/Hh/Glagolycya.jpg</span></p>
-
+<video src="217dc160fb.240.mp4" controls> </video>
 <p class=MsoNormal style='text-align:justify'><span
 style='font-size:8.0pt;line-height:115%;font-family:"Times New Roman",serif;
 color:#D9D9D9'>&nbsp;</span></p>
