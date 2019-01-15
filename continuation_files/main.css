@@ -1,0 +1,41 @@
+/* 
+ *  AEIOU CSS File
+ */
+
+ <!--
+ body {
+  margin: auto;
+  background-color: #818181;
+}
+ 
+.container {
+  width: 1008px;
+  margin: auto;
+  padding-right: 108px;
+  padding-left:108px;
+  padding-top: 27px;
+  padding-bottom: 54px;
+  margin-top: 27px;
+  background-color: white;
+  align: justify;
+  font-size: 18px;
+}
+
+.container-menu {
+  width: 594px;
+  margin: auto;
+  padding-left: 630px;
+  padding-top:9px;
+  padding-bottom: 9px;
+  margin-top: 9px;
+  background-color: white;
+  font-size: 12px;
+}
+
+p {
+  align: justify;
+  text-indent: 36px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+-->

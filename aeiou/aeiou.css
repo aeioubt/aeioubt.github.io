@@ -123,3 +123,41 @@ button.controlButton {
     visibility: hidden;
     white-space: nowrap;
 }
+
+.modal {
+    display: block; 
+    position: absolute;
+    /*margin: auto;*/
+    z-index: 9; 
+    padding: 1vw; 
+    height: 6vw;
+    margin-top: -8vw;
+    margin-left: -2vw;
+    padding-bottom: 3vw;
+	border-radius: 1vw;
+    overflow: visible;
+    background-color: rgb(255,255,255); /* Fallback color */
+    background-color: rgba(255,255,255,0.9); /* Black w/ opacity */
+}
+
+.modalimg {
+    margin: auto;
+    display: block;
+    width: auto;
+    height: 100%;
+
+    max-width: 180px;
+    max-height: 180px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: #999;
+    font-size: 1vw;
+
+    height: 9px;
+}

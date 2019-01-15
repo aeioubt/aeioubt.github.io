@@ -1,0 +1,117 @@
+/* Cleaned CSS: */
+
+/* user css */
+
+
+<div
+    lj-discovery-times
+    class="b-discoverytimes-wrapper discoverytimes-noiframe"
+    >
+        
+            <div
+                class="
+                    b-discoverytimes
+                    
+                        b-discoverytimes-state-branding
+                    
+                    
+                    "
+                ng-class="{
+                    'b-discoverytimes-state-recommend':   times.showRecommend,
+                    'b-discoverytimes-state-recommended': times.isRecommend,
+                    'b-discoverytimes-state-random':      times.showRandom
+                }"
+                ><!--
+
+                head
+                --><h1 class="b-discoverytimes-head"><!--
+                    --><a
+                        class="b-discoverytimes-head-link"
+                        href="https://www.livejournal.com/magazine"
+                        target="_blank"
+                        ><!--
+                        -->LJ Magazine<!--
+                    --></a><!--
+                --></h1><!--
+
+                banner
+                -->
+                    <div class="b-discoverytimes-banner">
+                        <div
+  class=
+    "
+    ljsale
+    ljsale--empty
+    
+    "
+
+  
+    lj-sale="adfox_shtorka_marketing"
+  
+    lj-sale-close-less="true"
+  
+
+  ></div>
+                    </div>
+                
+
+                <!-- items -->
+                <div class="b-discoverytimes-container">
+                    <div class="b-discoverytimes-items-container">
+                        <ul class="b-discoverytimes-items">
+                            <li ng-repeat="item in times.items"
+                                ng-class="{
+                                    'b-discoverytimes-item-active': times.active[item.itemid]
+                                }"
+                                class="b-discoverytimes-item"
+                                >
+                                <h3 class="b-discoverytimes-item-head">
+                                    <span class="b-discoverytimes-item-author" ng-bind-html="item.author" ng-if="item.author"></span>
+                                    <span ng-if="item.user && !item.author"
+                                        lj-user-dynamic="item.user.username"
+                                        lj-user-dynamic-options="{ target: '_blank', noctxpopup: true }"
+                                        ></span>
+                                </h3>
+
+                                <p class="b-discoverytimes-item-body">
+                                    <a ng-href="{{item.url}}" lj-html="item.subject" target="_blank"></a>
+                                </p>
+                            </li>
+                        </ul>
+
+                        
+                            <!-- aside -->
+                            <p class="b-discoverytimes-aside">
+
+                                <!-- recommend entry -->
+                                <a
+                                    href="javascript:void(0);"
+                                    class="b-discoverytimes-aside-recommend"
+                                    ng-click="times.recommend()"
+                                    ><!--
+                                    -->Recommend this entry<!--
+                                --></a>
+
+                                <!-- recommended entry -->
+                                <span
+                                    class="b-discoverytimes-aside-recommended"
+                                    ><!--
+                                    -->Has been recommended<!--
+                                --></span>
+
+                                <!-- random entry -->
+                                <a
+                                    href="https://www.livejournal.com/random.bml"
+                                    target="_blank"
+                                    class="b-discoverytimes-aside-random"
+                                    ><!--
+                                    -->Surprise me<!--
+                                --></a>
+
+                            </p><!-- /aside -->
+                        
+                    </div>
+                </div>
+            </div><!-- /discoverytimes -->
+        
+ </div>
