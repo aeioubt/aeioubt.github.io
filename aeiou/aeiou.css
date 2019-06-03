@@ -124,6 +124,11 @@ button.controlButton {
     white-space: nowrap;
 }
 
+.abj {
+    max-width: 6vw;
+    max-height: 5vw;
+}
+
 .modal {
     display: block; 
     position: absolute;

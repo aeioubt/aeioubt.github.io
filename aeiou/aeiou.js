@@ -584,65 +584,90 @@ tableAbcd["russian-bulgarian"]["sound"]["ю"] = [ "ю", "ю", "ю", "ю", "кл"
 tableAbcd["russian-bulgarian"]["sound"]["я"] = [ "я", "я", "я", " ", " ", "ц", "сно", "вно", "л", "clear (fair, plain)", "obviously", "full" ];
 
 // Hebrew Linear Table
-tableAbcd["hebrew"]["linear"] = '<div id="underDevelopment">&nbsp;</div><tr>\
+tableAbcd["hebrew"]["linear"] = '<tr>\
 <tr><td colspan="3"></td>\
-<td><button style="color:black" onclick="underDevelopment();">ד</button></td>\
-<td><button style="color:black" onclick="underDevelopment();">ג</button></td>\
-<td><button style="color:blue" onclick="underDevelopment();">ב</button></td>\
-<td><button style="color:red" onclick="underDevelopment();">א‎</button></td>\
+<td><button style="color:black" onclick="showLetter(\'ד\'); new Audio(\'sounds/hebrew/04_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="דPre"></div><div id="דLetter">ד</div><div id="דUnder"></div><div id="דPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ג\'); new Audio(\'sounds/hebrew/03_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="גPre"></div><div id="גLetter">ג</div><div id="גUnder"></div><div id="גPost"></div></div></button></td>\
+<td><button style="color:blue" onclick="showLetter(\'ב\'); new Audio(\'sounds/hebrew/02_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="בPre"></div><div id="בLetter">ב</div><div id="בUnder"></div><div id="בPost"></div></div></button></td>\
+<td><button style="color:red" onclick="showLetter(\'א‎\'); new Audio(\'sounds/hebrew/01_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="א‎Pre"></div><div id="א‎Letter">א‎</div><div id="א‎Under"></div><div id="א‎Post"></div></div></button></td>\
 </tr><tr><td colspan="2"></td>\
-<td><button style="color:black" onclick="underDevelopment();">ט</button></td>\
-<td><button style="color:black" onclick="underDevelopment();">ח</button></td>\
-<td><button style="color:black" onclick="underDevelopment();">ז</button></td>\
-<td><button style="color:blue" onclick="underDevelopment();">ו</button></td>\
-<td><button style="color:red" onclick="underDevelopment();">ה</button></td>\
+<td><button style="color:black" onclick="showLetter(\'ט\'); new Audio(\'sounds/hebrew/09_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="טPre"></div><div id="טLetter">ט</div><div id="טUnder"></div><div id="טPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ח\'); new Audio(\'sounds/hebrew/08_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="חPre"></div><div id="חLetter">ח</div><div id="חUnder"></div><div id="חPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ז\'); new Audio(\'sounds/hebrew/07_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="זPre"></div><div id="זLetter">ז</div><div id="זUnder"></div><div id="זPost"></div></div></button></td>\
+<td><button style="color:blue" onclick="showLetter(\'ו\'); new Audio(\'sounds/hebrew/06_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="וPre"></div><div id="וLetter">ו</div><div id="וUnder"></div><div id="וPost"></div></div></button></td>\
+<td><button style="color:red" onclick="showLetter(\'ה\'); new Audio(\'sounds/hebrew/05_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="הPre"></div><div id="הLetter">ה</div><div id="הUnder"></div><div id="הPost"></div></div></button></td>\
 </tr><tr><td></td>\
-<td><button style="color:black" onclick="underDevelopment();">ס</button></td>\
-<td><button style="color:black" onclick="underDevelopment();">נ</button></td>\
-<td><button style="color:blue" onclick="underDevelopment();">מ</button></td>\
-<td><button style="color:black" onclick="underDevelopment();">ל</button></td>\
-<td><button style="color:black" onclick="underDevelopment();">כ</button></td>\
-<td><button style="color:red" onclick="underDevelopment();">י</button></td>\
+<td><button style="color:black" onclick="showLetter(\'ס\'); new Audio(\'sounds/hebrew/15_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="סPre"></div><div id="סLetter">ס</div><div id="סUnder"></div><div id="סPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ן\'); new Audio(\'sounds/hebrew/14_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="ןPre"></div><div id="ןLetter">ן</div><div id="ןUnder"></div><div id="ןPost"></div></div></button></td>\
+<td><button style="color:blue" onclick="showLetter(\'ם\'); new Audio(\'sounds/hebrew/13_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="םPre"></div><div id="םLetter">ם</div><div id="םUnder"></div><div id="םPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ל\'); new Audio(\'sounds/hebrew/12_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="לPre"></div><div id="לLetter">ל</div><div id="לUnder"></div><div id="לPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ך\'); new Audio(\'sounds/hebrew/11_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="ךPre"></div><div id="ךLetter">ך</div><div id="ךUnder"></div><div id="ךPost"></div></div></button></td>\
+<td><button style="color:red" onclick="showLetter(\'י\'); new Audio(\'sounds/hebrew/10_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="יPre"></div><div id="יLetter">י</div><div id="יUnder"></div><div id="יPost"></div></div></button></td>\
 </tr><tr>\
-<td><button style="color:black" onclick="underDevelopment();">ת</button></td>\
-<td><button style="color:black" onclick="underDevelopment();">ש‎</button></td>\
-<td><button style="color:black" onclick="underDevelopment();">ר</button></td>\
-<td><button style="color:black" onclick="underDevelopment();">ק</button></td>\
-<td><button style="color:black" onclick="underDevelopment();">צ</button></td>\
-<td><button style="color:blue" onclick="underDevelopment();">פ</button></td>\
-<td><button style="color:red" onclick="underDevelopment();">ע</button></td>\
+<td><button style="color:black" onclick="showLetter(\'ת\'); new Audio(\'sounds/hebrew/22_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="תPre"></div><div id="תLetter">ת</div><div id="תUnder"></div><div id="תPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ש‎\'); new Audio(\'sounds/hebrew/21_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="ש‎Pre"></div><div id="ש‎Letter">ש‎</div><div id="ש‎Under"></div><div id="ש‎Post"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ר\'); new Audio(\'sounds/hebrew/20_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="רPre"></div><div id="רLetter">ר</div><div id="רUnder"></div><div id="רPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ק\'); new Audio(\'sounds/hebrew/19_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="קPre"></div><div id="קLetter">ק</div><div id="קUnder"></div><div id="קPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ץ\'); new Audio(\'sounds/hebrew/18_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="ץPre"></div><div id="ץLetter">ץ</div><div id="ץUnder"></div><div id="ץPost"></div></div></button></td>\
+<td><button style="color:blue" onclick="showLetter(\'פ\'); new Audio(\'sounds/hebrew/17_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="פPre"></div><div id="פLetter">פ</div><div id="פUnder"></div><div id="פPost"></div></div></button></td>\
+<td><button style="color:red" onclick="showLetter(\'ע\'); new Audio(\'sounds/hebrew/16_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="עPre"></div><div id="עLetter">ע</div><div id="עUnder"></div><div id="עPost"></div></div></button></td>\
 </tr></table>';
 
 // Hebrew Axial Table
-tableAbcd["hebrew"]["axial"] = '<div id="underDevelopment">&nbsp;</div><tr>\
-<td colspan="7" align="center"><button style="color:red" onclick="underDevelopment();">א</button></td>\
-</tr><tr><td colspan="2"></td><td colspan="3" align="center">\
-<button style="color:black" onclick="underDevelopment();">ג</button>\
-<button style="color:black" onclick="underDevelopment();">ב</button>\
-</td><td colspan="2"></td></tr><tr><td colspan="2"></td>\
-<td><button style="color:black" onclick="underDevelopment();">ו</button></td>\
-<td><button style="color:red" onclick="underDevelopment();">ה</button></td>\
-<td><button style="color:black" onclick="underDevelopment();">ד</button></td>\
+tableAbcd["hebrew"]["axial"] = '<tr>\
+<td colspan="10" align="center"><button style="color:red" onclick="showLetter(\'א‎\'); new Audio(\'sounds/hebrew/01_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="א‎Pre"></div><div id="א‎Letter">א‎</div><div id="א‎Under"></div><div id="א‎Post"></div></div></button></td>\
+</tr><tr><td colspan="0"></td><td colspan="3" align="center">\
+<td><button style="color:black" onclick="showLetter(\'ג\'); new Audio(\'sounds/hebrew/03_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="גPre"></div><div id="גLetter">ג</div><div id="גUnder"></div><div id="גPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ב\'); new Audio(\'sounds/hebrew/02_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="בPre"></div><div id="בLetter">ב</div><div id="בUnder"></div><div id="בPost"></div></div></button></td>\
+</td><td colspan="5"></td></tr><tr><td colspan="4"></td>\
+<td><button style="color:black" onclick="showLetter(\'ו\'); new Audio(\'sounds/hebrew/06_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="וPre"></div><div id="וLetter">ו</div><div id="וUnder"></div><div id="וPost"></div></div></button></td>\
+<td><button style="color:red" onclick="showLetter(\'ה\'); new Audio(\'sounds/hebrew/05_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="הPre"></div><div id="הLetter">ה</div><div id="הUnder"></div><div id="הPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ד\'); new Audio(\'sounds/hebrew/04_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="דPre"></div><div id="דLetter">ד</div><div id="דUnder"></div><div id="דPost"></div></div></button></td>\
 <td colspan="2"></td></tr><tr>\
-<td><button style="color:black" onclick="underDevelopment();">מ</button></td>\
-<td><button style="color:black" onclick="underDevelopment();">ל</button></td>\
-<td><button style="color:black" onclick="underDevelopment();">כ</button></td>\
-<td><button style="color:red" onclick="underDevelopment();">י</button></td>\
-<td><button style="color:black" onclick="underDevelopment();">ט</button></td>\
-<td><button style="color:black" onclick="underDevelopment();">ח</button></td>\
-<td><button style="color:black" onclick="underDevelopment();">ז</button></td>\
+<td><button style="color:black" onclick="showLetter(\'ם\'); new Audio(\'sounds/hebrew/13_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="םPre"></div><div id="םLetter">ם</div><div id="םUnder"></div><div id="םPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ל\'); new Audio(\'sounds/hebrew/12_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="לPre"></div><div id="לLetter">ל</div><div id="לUnder"></div><div id="לPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ך\'); new Audio(\'sounds/hebrew/11_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="ךPre"></div><div id="ךLetter">ך</div><div id="ךUnder"></div><div id="ךPost"></div></div></button></td>\
+<td><button style="color:red" onclick="showLetter(\'י\'); new Audio(\'sounds/hebrew/10_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="יPre"></div><div id="יLetter">י</div><div id="יUnder"></div><div id="יPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ט\'); new Audio(\'sounds/hebrew/09_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="טPre"></div><div id="טLetter">ט</div><div id="טUnder"></div><div id="טPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ח\'); new Audio(\'sounds/hebrew/08_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="חPre"></div><div id="חLetter">ח</div><div id="חUnder"></div><div id="חPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ז\'); new Audio(\'sounds/hebrew/07_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="זPre"></div><div id="זLetter">ז</div><div id="זUnder"></div><div id="זPost"></div></div></button></td>\
 </tr><tr><td></td>\
-<td><button style="color:black" onclick="underDevelopment();">צ</button></td>\
-<td><button style="color:black" onclick="underDevelopment();">פ</button></td>\
-<td><button style="color:red" onclick="underDevelopment();">ע</button></td>\
-<td><button style="color:black" onclick="underDevelopment();">ס</button></td>\
-<td><button style="color:black" onclick="underDevelopment();">נ</button></td>\
-<td></td></tr><tr><td></td><td colspan="5" align="center">\
-<button style="color:black" onclick="underDevelopment();">ת</button>\
-<button style="color:black" onclick="underDevelopment();">ש‎</button>\
-<button style="color:black" onclick="underDevelopment();">ר</button>\
-<button style="color:black" onclick="underDevelopment();">ק</button>\
+<td><button style="color:black" onclick="showLetter(\'ץ\'); new Audio(\'sounds/hebrew/18_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="ץPre"></div><div id="ץLetter">ץ</div><div id="ץUnder"></div><div id="ץPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'פ\'); new Audio(\'sounds/hebrew/17_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="פPre"></div><div id="פLetter">פ</div><div id="פUnder"></div><div id="פPost"></div></div></button></td>\
+<td><button style="color:red" onclick="showLetter(\'ע\'); new Audio(\'sounds/hebrew/16_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="עPre"></div><div id="עLetter">ע</div><div id="עUnder"></div><div id="עPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ס\'); new Audio(\'sounds/hebrew/15_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="סPre"></div><div id="סLetter">ס</div><div id="סUnder"></div><div id="סPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ן\'); new Audio(\'sounds/hebrew/14_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="ןPre"></div><div id="ןLetter">ן</div><div id="ןUnder"></div><div id="ןPost"></div></div></button></td>\
+<td></td></tr><tr><td></td><td colspan="0" align="center">\
+<td><button style="color:black" onclick="showLetter(\'ת\'); new Audio(\'sounds/hebrew/22_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="תPre"></div><div id="תLetter">ת</div><div id="תUnder"></div><div id="תPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ש‎\'); new Audio(\'sounds/hebrew/21_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="ש‎Pre"></div><div id="ש‎Letter">ש‎</div><div id="ש‎Under"></div><div id="ש‎Post"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ר\'); new Audio(\'sounds/hebrew/20_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="רPre"></div><div id="רLetter">ר</div><div id="רUnder"></div><div id="רPost"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetter(\'ק\'); new Audio(\'sounds/hebrew/19_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="קPre"></div><div id="קLetter">ק</div><div id="קUnder"></div><div id="קPost"></div></div></button></td>\
 </td><td></td></tr></table>';
+
+// Hebrew Sound Correspondence
+tableAbcd["hebrew"]["sound"] = {};
+tableAbcd["hebrew"]["sound"]["א‎"] = [ "א", "א", "א", "א", "א", " ", " ", " ", " ", " ", "בא", "ימא", "ח", "חות", "ני", "dad", "mom", "brother", "sister", "I" ];
+tableAbcd["hebrew"]["sound"]["ב"] = [ "ב", "ב", "ב", "ב", "ב", "ב", "...", " ", "ער", "טו", " ", " ", " ", "וקר", " ", " ", "ן", "ת", "in, at", "morning", "evening", "good", "son", "daughter" ];
+tableAbcd["hebrew"]["sound"]["ג"] = [ "ג", "ג", "ג'", " ", " ", " ", "ם", "ב", "וק", "also", "back", "cockroach" ];
+tableAbcd["hebrew"]["sound"]["ד"] = [ "ד", "ד", "ד", " ", " ", " ", "וד", "ודה", "בש", "uncle", "aunt", "honey" ];
+tableAbcd["hebrew"]["sound"]["ה"] = [ "ה", "ה", "ה", "ה", "ה", "ה", "...", " ", " ", " ", " ", " ", " ", "בא", "וא", "יא", "ם", "ן", "the", "next", "he", "she", "they (m.)", "they (f.)" ];
+tableAbcd["hebrew"]["sound"]["ו"] = [ "ו", "ו", "ו", "ו", "ו", "...", "הו", "ז", "ח", "ח", " ", "ה", "ל", "ף", "פשה", "and", "present (now)", "cheap", "beach", "vacation" ];
+tableAbcd["hebrew"]["sound"]["ז"] = [ "ז", "ז", "ז", " ", " ", " ", "ה", "מן", "ית", "this", "time", "olive" ];
+tableAbcd["hebrew"]["sound"]["ח"] = [ "ח", "ח", "ח", "ח", "ח", " ", " ", " ", " ", " ", "בר", "ברה", "דר", "דש", "ודש", "friend", "company", "room", "new", "month" ];
+tableAbcd["hebrew"]["sound"]["ט"] = [ "ט", "ט", "ט", " ", " ", " ", "וב", "לה", "עים", "good", "lamb", "tasty" ];
+tableAbcd["hebrew"]["sound"]["י"] = [ "י", "י", "י", "י", "י", " ", "ה", " ", " ", " ", "ום", "ום", "ם", "ין", "ציאה", "day", "today", "sea", "wine", "exit" ];
+tableAbcd["hebrew"]["sound"]["ך"] = [ "כ", "כ", "כ", "כ", "כ", "כ", "...", " ", " ", " ", " ", " ", " ", "וכב", "מה", "ן", "ל", "לום", "as", "star", "how much", "yes", "all", "nothing" ];
+tableAbcd["hebrew"]["sound"]["ל"] = [ "ל", "ל", "ל", "ל", "ל", "ל", "...", " ", " ", " ", " ", " ", " ", "א", "אט", "ב", "בד", "בן", "to, for", "no", "slowly", "heart", "alone", "white" ];
+tableAbcd["hebrew"]["sound"]["ם"] = [ "מ", "מ", "מ", "מ", "מ", "מ", "...", " ", " ", " ", " ", " ", " ", "אוד", "דינה", "דען", "ה", "י", "from", "very", "country", "scientist", "what", "who" ];
+tableAbcd["hebrew"]["sound"]["ן"] = [ "נ", "נ", "נ", " ", " ", " ", "בון", "כון", "ייר", "smart", "correct", "paper" ];
+tableAbcd["hebrew"]["sound"]["ס"] = [ "ס", "ס", "ס", "ס", "ס", " ", " ", " ", "מ", "כ", "בא", "בון", "בתא", "פר", "ף", "grandfather", "soap", "grandmother", "number", "money" ];
+tableAbcd["hebrew"]["sound"]["ע"] = [ "ע", "ע", "ע", "ע", "ע", "ע", " ", " ", " ", " ", " ", " ", "ין", "בר", "ברית", "וף", "ט", "יר", "eye", "past", "hebrew", "chicken", "pen", "city" ];
+tableAbcd["hebrew"]["sound"]["פ"] = [ "פ", "פ", "פ", "פ", "פ", "פ", " ", " ", "י", "ס", "אי", " ", "ה", "ה", "ה", "ה", "ה", "נים", "mouth", "here", "beautiful", "sofa", "where", "face" ];
+tableAbcd["hebrew"]["sound"]["ץ"] = [ "צ", "צ", "צ", "צ", "צ", " ", "מ", "ב", "בי", " ", "יפור", "וין", "ל", "ה", "בע", "bird", "excellent", "onion", "egg", "color" ];
+tableAbcd["hebrew"]["sound"]["ק"] = [ "ק", "ק", "ק", "ק", "ק", "ק", " ", " ", " ", " ", " ", " ", "ל", "שה", "יר", "ניון", "טן", "צת", "easy", "difficult", "wall", "mall", "small", "a little" ];
+tableAbcd["hebrew"]["sound"]["ר"] = [ "ר", "ר", "ר", "ר", "ר", "ר", " ", " ", " ", " ", "פ", "פסנת", "אש", "אשון", "גל", "גע", "י", " ", "head", "first", "leg", "moment", "fruit", "piano" ];
+tableAbcd["hebrew"]["sound"]["ש‎"] = [ "ש", "ש", "ש", "ש", "ש", "ש", "ש", "ש", "א", " ", " ", " ", " ", " ", " ", "נ", " ", "ל", "מש", "ם", "ם", "מן", "פה", "וי", "fire", "of", "sun", "there", "name", "oil", "language", "married" ];
+tableAbcd["hebrew"]["sound"]["ת"] = [ "ת", "ת", "ת", "ת", "ת", " ", " ", " ", "פ", "שב", "ה", "ות", "יק", "וח", " ", "tea", "strawberry", "bag", "open", "Saturday" ];
 
 // Greek Linear Table
 tableAbcd["greek"]["linear"] = '<tr>\
@@ -826,76 +851,76 @@ tableAbcd["georgian"]["axial"] = '<div id="underDevelopment">&nbsp;</div><tr>\
 // Abjadi Linear Table
 tableAbcd["abjadi"]["linear"] = '<tr>\
 <td colspan="4"></td>\
-<td><button style="color:black" onclick="showLetterImg(\'04\'); new Audio(\'sounds/abjadi/04_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="04Letter"><img src="pics/abjadi/04_00.png"></div><div id="04Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'03\'); new Audio(\'sounds/abjadi/03_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="03Letter"><img src="pics/abjadi/03_00.png"></div><div id="03Under"></div></div></button></td>\
-<td><button style="color:blue" onclick="showLetterImg(\'02\'); new Audio(\'sounds/abjadi/02_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="02Letter"><img src="pics/abjadi/02_00.png"></div><div id="02Under"></div></div></button></td>\
-<td><button style="color:red" onclick="showLetterImg(\'01\'); new Audio(\'sounds/abjadi/01_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="01Letter"><img src="pics/abjadi/01_00.png"></div><div id="01Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'04\'); new Audio(\'sounds/abjadi/04_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="04Letter"><img class="abj" src="pics/abjadi/04_00.png"></div><div id="04Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'03\'); new Audio(\'sounds/abjadi/03_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="03Letter"><img class="abj" src="pics/abjadi/03_00.png"></div><div id="03Under"></div></div></button></td>\
+<td><button style="color:blue" onclick="showLetterImg(\'02\'); new Audio(\'sounds/abjadi/02_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="02Letter"><img class="abj" src="pics/abjadi/02_00.png"></div><div id="02Under"></div></div></button></td>\
+<td><button style="color:red" onclick="showLetterImg(\'01\'); new Audio(\'sounds/abjadi/01_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="01Letter"><img class="abj" src="pics/abjadi/01_00.png"></div><div id="01Under"></div></div></button></td>\
 </tr><tr><td colspan="3"></td>\
-<td><button style="color:black" onclick="showLetterImg(\'09\'); new Audio(\'sounds/abjadi/09_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="09Letter"><img src="pics/abjadi/09_00.png"></div><div id="09Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'08\'); new Audio(\'sounds/abjadi/08_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="08Letter"><img src="pics/abjadi/08_00.png"></div><div id="08Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'07\'); new Audio(\'sounds/abjadi/07_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="07Letter"><img src="pics/abjadi/07_00.png"></div><div id="07Under"></div></div></button></td>\
-<td><button style="color:grey" onclick="showLetterImg(\'06\'); new Audio(\'sounds/abjadi/06_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="06Letter"><img src="pics/abjadi/06_00.png"></div><div id="06Under"></div></div></button></td>\
-<td><button style="color:red" onclick="showLetterImg(\'05\'); new Audio(\'sounds/abjadi/05_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="05Letter"><img src="pics/abjadi/05_00.png"></div><div id="05Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'09\'); new Audio(\'sounds/abjadi/09_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="09Letter"><img class="abj" src="pics/abjadi/09_00.png"></div><div id="09Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'08\'); new Audio(\'sounds/abjadi/08_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="08Letter"><img class="abj" src="pics/abjadi/08_00.png"></div><div id="08Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'07\'); new Audio(\'sounds/abjadi/07_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="07Letter"><img class="abj" src="pics/abjadi/07_00.png"></div><div id="07Under"></div></div></button></td>\
+<td><button style="color:grey" onclick="showLetterImg(\'06\'); new Audio(\'sounds/abjadi/06_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="06Letter"><img class="abj" src="pics/abjadi/06_00.png"></div><div id="06Under"></div></div></button></td>\
+<td><button style="color:red" onclick="showLetterImg(\'05\'); new Audio(\'sounds/abjadi/05_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="05Letter"><img class="abj" src="pics/abjadi/05_00.png"></div><div id="05Under"></div></div></button></td>\
 </tr><tr><td colspan="2"></td>\
-<td><button style="color:black" onclick="showLetterImg(\'15\'); new Audio(\'sounds/abjadi/15_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="15Letter"><img src="pics/abjadi/15_00.png"></div><div id="15Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'14\'); new Audio(\'sounds/abjadi/14_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="14Letter"><img src="pics/abjadi/14_00.png"></div><div id="14Under"></div></div></button></td>\
-<td><button style="color:blue" onclick="showLetterImg(\'13\'); new Audio(\'sounds/abjadi/13_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="13Letter"><img src="pics/abjadi/13_00.png"></div><div id="13Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'12\'); new Audio(\'sounds/abjadi/12_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="12Letter"><img src="pics/abjadi/12_00.png"></div><div id="12Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'11\'); new Audio(\'sounds/abjadi/11_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="11Letter"><img src="pics/abjadi/11_00.png"></div><div id="11Under"></div></div></button></td>\
-<td><button style="color:red" onclick="showLetterImg(\'10\'); new Audio(\'sounds/abjadi/10_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="10Letter"><img src="pics/abjadi/10_00.png"></div><div id="10Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'15\'); new Audio(\'sounds/abjadi/15_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="15Letter"><img class="abj" src="pics/abjadi/15_00.png"></div><div id="15Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'14\'); new Audio(\'sounds/abjadi/14_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="14Letter"><img class="abj" src="pics/abjadi/14_00.png"></div><div id="14Under"></div></div></button></td>\
+<td><button style="color:blue" onclick="showLetterImg(\'13\'); new Audio(\'sounds/abjadi/13_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="13Letter"><img class="abj" src="pics/abjadi/13_00.png"></div><div id="13Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'12\'); new Audio(\'sounds/abjadi/12_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="12Letter"><img class="abj" src="pics/abjadi/12_00.png"></div><div id="12Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'11\'); new Audio(\'sounds/abjadi/11_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="11Letter"><img class="abj" src="pics/abjadi/11_00.png"></div><div id="11Under"></div></div></button></td>\
+<td><button style="color:red" onclick="showLetterImg(\'10\'); new Audio(\'sounds/abjadi/10_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="10Letter"><img class="abj" src="pics/abjadi/10_00.png"></div><div id="10Under"></div></div></button></td>\
 </tr><tr><td></td>\
-<td><button style="color:black" onclick="showLetterImg(\'22\'); new Audio(\'sounds/abjadi/22_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="22Letter"><img src="pics/abjadi/22_00.png"></div><div id="22Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'21\'); new Audio(\'sounds/abjadi/21_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="21Letter"><img src="pics/abjadi/21_00.png"></div><div id="21Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'20\'); new Audio(\'sounds/abjadi/20_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="20Letter"><img src="pics/abjadi/20_00.png"></div><div id="20Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'19\'); new Audio(\'sounds/abjadi/19_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="19Letter"><img src="pics/abjadi/19_00.png"></div><div id="19Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'18\'); new Audio(\'sounds/abjadi/18_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="18Letter"><img src="pics/abjadi/18_00.png"></div><div id="18Under"></div></div></button></td>\
-<td><button style="color:blue" onclick="showLetterImg(\'17\'); new Audio(\'sounds/abjadi/17_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="17Letter"><img src="pics/abjadi/17_00.png"></div><div id="17Under"></div></div></button></td>\
-<td><button style="color:red" onclick="showLetterImg(\'16\'); new Audio(\'sounds/abjadi/16_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="16Letter"><img src="pics/abjadi/16_00.png"></div><div id="16Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'22\'); new Audio(\'sounds/abjadi/22_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="22Letter"><img class="abj" src="pics/abjadi/22_00.png"></div><div id="22Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'21\'); new Audio(\'sounds/abjadi/21_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="21Letter"><img class="abj" src="pics/abjadi/21_00.png"></div><div id="21Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'20\'); new Audio(\'sounds/abjadi/20_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="20Letter"><img class="abj" src="pics/abjadi/20_00.png"></div><div id="20Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'19\'); new Audio(\'sounds/abjadi/19_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="19Letter"><img class="abj" src="pics/abjadi/19_00.png"></div><div id="19Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'18\'); new Audio(\'sounds/abjadi/18_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="18Letter"><img class="abj" src="pics/abjadi/18_00.png"></div><div id="18Under"></div></div></button></td>\
+<td><button style="color:blue" onclick="showLetterImg(\'17\'); new Audio(\'sounds/abjadi/17_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="17Letter"><img class="abj" src="pics/abjadi/17_00.png"></div><div id="17Under"></div></div></button></td>\
+<td><button style="color:red" onclick="showLetterImg(\'16\'); new Audio(\'sounds/abjadi/16_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="16Letter"><img class="abj" src="pics/abjadi/16_00.png"></div><div id="16Under"></div></div></button></td>\
 </tr><tr>\
-<td><button style="color:black" onclick="showLetterImg(\'28\'); new Audio(\'sounds/abjadi/28_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="28Letter"><img src="pics/abjadi/28_00.png"></div><div id="28Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'27\'); new Audio(\'sounds/abjadi/27_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="27Letter"><img src="pics/abjadi/27_00.png"></div><div id="27Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'26\'); new Audio(\'sounds/abjadi/26_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="26Letter"><img src="pics/abjadi/26_00.png"></div><div id="26Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'25\'); new Audio(\'sounds/abjadi/25_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="25Letter"><img src="pics/abjadi/25_00.png"></div><div id="25Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'24\'); new Audio(\'sounds/abjadi/24_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="24Letter"><img src="pics/abjadi/24_00.png"></div><div id="24Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'23\'); new Audio(\'sounds/abjadi/23_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="23Letter"><img src="pics/abjadi/23_00.png"></div><div id="23Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'28\'); new Audio(\'sounds/abjadi/28_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="28Letter"><img class="abj" src="pics/abjadi/28_00.png"></div><div id="28Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'27\'); new Audio(\'sounds/abjadi/27_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="27Letter"><img class="abj" src="pics/abjadi/27_00.png"></div><div id="27Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'26\'); new Audio(\'sounds/abjadi/26_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="26Letter"><img class="abj" src="pics/abjadi/26_00.png"></div><div id="26Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'25\'); new Audio(\'sounds/abjadi/25_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="25Letter"><img class="abj" src="pics/abjadi/25_00.png"></div><div id="25Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'24\'); new Audio(\'sounds/abjadi/24_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="24Letter"><img class="abj" src="pics/abjadi/24_00.png"></div><div id="24Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'23\'); new Audio(\'sounds/abjadi/23_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="23Letter"><img class="abj" src="pics/abjadi/23_00.png"></div><div id="23Under"></div></div></button></td>\
 </tr></table>';
 
 // Abjadi Axial Table
 tableAbcd["abjadi"]["axial"] = '<tr>\
-<td colspan="7" align="center"><button style="color:red" onclick="showLetterImg(\'01\'); new Audio(\'sounds/abjadi/01_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="01Letter"><img src="pics/abjadi/01_00.png"></div><div id="01Under"></div></div></button></td>\
+<td colspan="7" align="center"><button style="color:red" onclick="showLetterImg(\'01\'); new Audio(\'sounds/abjadi/01_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="01Letter"><img class="abj" src="pics/abjadi/01_00.png"></div><div id="01Under"></div></div></button></td>\
 </tr><tr><td colspan="2"></td><td colspan="3" align="center">\
-<button style="color:black" onclick="showLetterImg(\'03\'); new Audio(\'sounds/abjadi/03_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="03Letter"><img src="pics/abjadi/03_00.png"></div><div id="03Under"></div></div></button>\
-<button style="color:blue" onclick="showLetterImg(\'02\'); new Audio(\'sounds/abjadi/02_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="02Letter"><img src="pics/abjadi/02_00.png"></div><div id="02Under"></div></div></button>\
+<button style="color:black" onclick="showLetterImg(\'03\'); new Audio(\'sounds/abjadi/03_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="03Letter"><img class="abj" src="pics/abjadi/03_00.png"></div><div id="03Under"></div></div></button>\
+<button style="color:blue" onclick="showLetterImg(\'02\'); new Audio(\'sounds/abjadi/02_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="02Letter"><img class="abj" src="pics/abjadi/02_00.png"></div><div id="02Under"></div></div></button>\
 </td><td colspan="2"></td></tr><tr><td colspan="2"></td>\
-<td><button style="color:grey" onclick="showLetterImg(\'06\'); new Audio(\'sounds/abjadi/06_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="06Letter"><img src="pics/abjadi/06_00.png"></div><div id="06Under"></div></div></button></td>\
-<td><button style="color:red" onclick="showLetterImg(\'05\'); new Audio(\'sounds/abjadi/05_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="05Letter"><img src="pics/abjadi/05_00.png"></div><div id="05Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'04\'); new Audio(\'sounds/abjadi/04_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="04Letter"><img src="pics/abjadi/04_00.png"></div><div id="04Under"></div></div></button></td>\
+<td><button style="color:grey" onclick="showLetterImg(\'06\'); new Audio(\'sounds/abjadi/06_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="06Letter"><img class="abj" src="pics/abjadi/06_00.png"></div><div id="06Under"></div></div></button></td>\
+<td><button style="color:red" onclick="showLetterImg(\'05\'); new Audio(\'sounds/abjadi/05_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="05Letter"><img class="abj" src="pics/abjadi/05_00.png"></div><div id="05Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'04\'); new Audio(\'sounds/abjadi/04_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="04Letter"><img class="abj" src="pics/abjadi/04_00.png"></div><div id="04Under"></div></div></button></td>\
 </td><td colspan="2"></td></tr><tr>\
-<td><button style="color:blue" onclick="showLetterImg(\'13\'); new Audio(\'sounds/abjadi/13_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="13Letter"><img src="pics/abjadi/13_00.png"></div><div id="13Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'12\'); new Audio(\'sounds/abjadi/12_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="12Letter"><img src="pics/abjadi/12_00.png"></div><div id="12Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'11\'); new Audio(\'sounds/abjadi/11_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="11Letter"><img src="pics/abjadi/11_00.png"></div><div id="11Under"></div></div></button></td>\
-<td><button style="color:red" onclick="showLetterImg(\'10\'); new Audio(\'sounds/abjadi/10_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="10Letter"><img src="pics/abjadi/10_00.png"></div><div id="10Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'09\'); new Audio(\'sounds/abjadi/09_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="09Letter"><img src="pics/abjadi/09_00.png"></div><div id="09Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'08\'); new Audio(\'sounds/abjadi/08_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="08Letter"><img src="pics/abjadi/08_00.png"></div><div id="08Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'07\'); new Audio(\'sounds/abjadi/07_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="07Letter"><img src="pics/abjadi/07_00.png"></div><div id="07Under"></div></div></button></td>\
+<td><button style="color:blue" onclick="showLetterImg(\'13\'); new Audio(\'sounds/abjadi/13_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="13Letter"><img class="abj" src="pics/abjadi/13_00.png"></div><div id="13Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'12\'); new Audio(\'sounds/abjadi/12_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="12Letter"><img class="abj" src="pics/abjadi/12_00.png"></div><div id="12Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'11\'); new Audio(\'sounds/abjadi/11_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="11Letter"><img class="abj" src="pics/abjadi/11_00.png"></div><div id="11Under"></div></div></button></td>\
+<td><button style="color:red" onclick="showLetterImg(\'10\'); new Audio(\'sounds/abjadi/10_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="10Letter"><img class="abj" src="pics/abjadi/10_00.png"></div><div id="10Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'09\'); new Audio(\'sounds/abjadi/09_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="09Letter"><img class="abj" src="pics/abjadi/09_00.png"></div><div id="09Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'08\'); new Audio(\'sounds/abjadi/08_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="08Letter"><img class="abj" src="pics/abjadi/08_00.png"></div><div id="08Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'07\'); new Audio(\'sounds/abjadi/07_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="07Letter"><img class="abj" src="pics/abjadi/07_00.png"></div><div id="07Under"></div></div></button></td>\
 </tr><tr><td></td>\
-<td><button style="color:black" onclick="showLetterImg(\'18\'); new Audio(\'sounds/abjadi/18_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="18Letter"><img src="pics/abjadi/18_00.png"></div><div id="18Under"></div></div></button></td>\
-<td><button style="color:blue" onclick="showLetterImg(\'17\'); new Audio(\'sounds/abjadi/17_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="17Letter"><img src="pics/abjadi/17_00.png"></div><div id="17Under"></div></div></button></td>\
-<td><button style="color:red" onclick="showLetterImg(\'16\'); new Audio(\'sounds/abjadi/16_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="16Letter"><img src="pics/abjadi/16_00.png"></div><div id="16Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'15\'); new Audio(\'sounds/abjadi/15_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="15Letter"><img src="pics/abjadi/15_00.png"></div><div id="15Under"></div></div></button></td>\
-<td><button style="color:black" onclick="showLetterImg(\'14\'); new Audio(\'sounds/abjadi/14_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="14Letter"><img src="pics/abjadi/14_00.png"></div><div id="14Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'18\'); new Audio(\'sounds/abjadi/18_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="18Letter"><img class="abj" src="pics/abjadi/18_00.png"></div><div id="18Under"></div></div></button></td>\
+<td><button style="color:blue" onclick="showLetterImg(\'17\'); new Audio(\'sounds/abjadi/17_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="17Letter"><img class="abj" src="pics/abjadi/17_00.png"></div><div id="17Under"></div></div></button></td>\
+<td><button style="color:red" onclick="showLetterImg(\'16\'); new Audio(\'sounds/abjadi/16_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="16Letter"><img class="abj" src="pics/abjadi/16_00.png"></div><div id="16Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'15\'); new Audio(\'sounds/abjadi/15_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="15Letter"><img class="abj" src="pics/abjadi/15_00.png"></div><div id="15Under"></div></div></button></td>\
+<td><button style="color:black" onclick="showLetterImg(\'14\'); new Audio(\'sounds/abjadi/14_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="14Letter"><img class="abj" src="pics/abjadi/14_00.png"></div><div id="14Under"></div></div></button></td>\
 <td></td></tr><tr><td></td><td colspan="5" align="center">\
-<button style="color:black" onclick="showLetterImg(\'22\'); new Audio(\'sounds/abjadi/22_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="22Letter"><img src="pics/abjadi/22_00.png"></div><div id="22Under"></div></div></button>\
-<button style="color:black" onclick="showLetterImg(\'21\'); new Audio(\'sounds/abjadi/21_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="21Letter"><img src="pics/abjadi/21_00.png"></div><div id="21Under"></div></div></button>\
-<button style="color:black" onclick="showLetterImg(\'20\'); new Audio(\'sounds/abjadi/20_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="20Letter"><img src="pics/abjadi/20_00.png"></div><div id="20Under"></div></div></button>\
-<button style="color:black" onclick="showLetterImg(\'19\'); new Audio(\'sounds/abjadi/19_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="19Letter"><img src="pics/abjadi/19_00.png"></div><div id="19Under"></div></div></button>\
+<button style="color:black" onclick="showLetterImg(\'22\'); new Audio(\'sounds/abjadi/22_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="22Letter"><img class="abj" src="pics/abjadi/22_00.png"></div><div id="22Under"></div></div></button>\
+<button style="color:black" onclick="showLetterImg(\'21\'); new Audio(\'sounds/abjadi/21_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="21Letter"><img class="abj" src="pics/abjadi/21_00.png"></div><div id="21Under"></div></div></button>\
+<button style="color:black" onclick="showLetterImg(\'20\'); new Audio(\'sounds/abjadi/20_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="20Letter"><img class="abj" src="pics/abjadi/20_00.png"></div><div id="20Under"></div></div></button>\
+<button style="color:black" onclick="showLetterImg(\'19\'); new Audio(\'sounds/abjadi/19_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="19Letter"><img class="abj" src="pics/abjadi/19_00.png"></div><div id="19Under"></div></div></button>\
 </td><td></td></tr><tr><td colspan="7" align="center">\
-<button style="color:black" onclick="showLetterImg(\'28\'); new Audio(\'sounds/abjadi/28_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="28Letter"><img src="pics/abjadi/28_00.png"></div><div id="28Under"></div></div></button>\
-<button style="color:black" onclick="showLetterImg(\'27\'); new Audio(\'sounds/abjadi/27_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="27Letter"><img src="pics/abjadi/27_00.png"></div><div id="27Under"></div></div></button>\
-<button style="color:black" onclick="showLetterImg(\'26\'); new Audio(\'sounds/abjadi/26_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="26Letter"><img src="pics/abjadi/26_00.png"></div><div id="26Under"></div></div></button>\
-<button style="color:black" onclick="showLetterImg(\'25\'); new Audio(\'sounds/abjadi/25_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="25Letter"><img src="pics/abjadi/25_00.png"></div><div id="25Under"></div></div></button>\
-<button style="color:black" onclick="showLetterImg(\'24\'); new Audio(\'sounds/abjadi/24_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="24Letter"><img src="pics/abjadi/24_00.png"></div><div id="24Under"></div></div></button>\
-<button style="color:black" onclick="showLetterImg(\'23\'); new Audio(\'sounds/abjadi/23_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="23Letter"><img src="pics/abjadi/23_00.png"></div><div id="23Under"></div></div></button>\
+<button style="color:black" onclick="showLetterImg(\'28\'); new Audio(\'sounds/abjadi/28_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="28Letter"><img class="abj" src="pics/abjadi/28_00.png"></div><div id="28Under"></div></div></button>\
+<button style="color:black" onclick="showLetterImg(\'27\'); new Audio(\'sounds/abjadi/27_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="27Letter"><img class="abj" src="pics/abjadi/27_00.png"></div><div id="27Under"></div></div></button>\
+<button style="color:black" onclick="showLetterImg(\'26\'); new Audio(\'sounds/abjadi/26_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="26Letter"><img class="abj" src="pics/abjadi/26_00.png"></div><div id="26Under"></div></div></button>\
+<button style="color:black" onclick="showLetterImg(\'25\'); new Audio(\'sounds/abjadi/25_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="25Letter"><img class="abj" src="pics/abjadi/25_00.png"></div><div id="25Under"></div></div></button>\
+<button style="color:black" onclick="showLetterImg(\'24\'); new Audio(\'sounds/abjadi/24_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="24Letter"><img class="abj" src="pics/abjadi/24_00.png"></div><div id="24Under"></div></div></button>\
+<button style="color:black" onclick="showLetterImg(\'23\'); new Audio(\'sounds/abjadi/23_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="23Letter"><img class="abj" src="pics/abjadi/23_00.png"></div><div id="23Under"></div></div></button>\
 </td></tr></table>';
 
 // Abjadi_old Linear Table
@@ -1246,7 +1271,7 @@ var tablePostfix = '</td>\
 <tr><td><button class="controlButton" onclick="makeAeiou(\'greek\', layout, \'default\', \'default\')">ΑΒΓΔ</button></td></tr>\
 <tr><td><button class="controlButton" onclick="makeAeiou(\'russian\', layout, \'default\', \'default\')">АБВГ</button></td></tr>\
 <tr><td><button class="controlButton" onclick="makeAeiou(\'abjadi\', layout, \'abjadi\', \'default\')"><span style="font-family: \'Mirza\', cursive;">أبجد</span></button></td></tr>\
-<tr><td><button class="controlButton" onclick="makeAeiou(\'hebrew\', layout, \'hebrew\', \'default\')"><span style="color:#D2D2D2" style="font-family: \'Noto Sans Hebrew\', sans-serif;">אבגד</span></button></td></tr>\
+<tr><td><button class="controlButton" onclick="makeAeiou(\'hebrew\', layout, \'hebrew\', \'default\')"><span style="font-family: \'Noto Sans Hebrew\', sans-serif;">אבגד</span></button></td></tr>\
 <tr><td><button class="controlButton" onclick="makeAeiou(\'georgian\', layout, \'georgian\', \'default\')"><span style="color:#D2D2D2" style="font-family: \'Noto Sans Georgian\', serif;">აბგდ</span></button></td></tr>\
 <tr><td><button class="controlButton" onclick="makeAeiou(\'runes\', layout, \'runes\', \'default\')"><span style="font-family: \'Noto Sans Runic\', sans-serif;">ᛅᛒᚦᛁ</span></button></td></tr>\
 <tr><td><button class="controlButton" onclick="makeAeiou(\'ugaritic\', layout, \'ugaritic\', \'default\')"><span style="color:#D2D2D2" style="font-family: \'Noto Sans Ugaritic\', sans-serif;">𐎀𐎁𐎂𐎃</span></button></td></tr>\
@@ -1353,13 +1378,13 @@ function showLetterImg(letter) {
             }
             //new modal output
 
-            document.getElementById(letter + "Letter").innerHTML = '<img src="pics/'+alphabetos + '/'+ letter + '_00.png"><div id="myModal" class="modal">'+tableAbcd[speakLanguage]["sound"][letter][lastSpoken["count"] - 1]+'<div id="caption">'+bracketLeft + ( tableAbcd[speakLanguage]["sound"][letter][((tableAbcd[speakLanguage]["sound"][letter].length / 4) * 3) - 1 + lastSpoken["count"]] ) + bracketRight +'</div> </div>';
+            document.getElementById(letter + "Letter").innerHTML = '<img class="abj" src="pics/'+alphabetos + '/'+ letter + '_00.png"><div id="myModal" class="modal">'+tableAbcd[speakLanguage]["sound"][letter][lastSpoken["count"] - 1]+'<div id="caption">'+bracketLeft + ( tableAbcd[speakLanguage]["sound"][letter][((tableAbcd[speakLanguage]["sound"][letter].length / 4) * 3) - 1 + lastSpoken["count"]] ) + bracketRight +'</div> </div>';
 
             var sleeptime = 2000 + ((tableAbcd[speakLanguage]["sound"][letter][((tableAbcd[speakLanguage]["sound"][letter].length / 4) - 1) + lastSpoken["count"]].length + tableAbcd[speakLanguage]["sound"][letter][lastSpoken["count"] + (((tableAbcd[speakLanguage]["sound"][letter].length / 4) * 2) - 1)].length + 1) * 100);
             sleep(sleeptime).then(() => {
                 var currentTime = new Date();
                 if (currentTime.getTime()-lastPressedTime[letter].getTime() >= sleeptime) {
-                    document.getElementById(letter + "Letter").innerHTML = "<img src=\"pics/" + alphabetos + "/"+ letter + "_00.png\">";
+                    document.getElementById(letter + "Letter").innerHTML = "<img class=\"abj\" src=\"pics/" + alphabetos + "/"+ letter + "_00.png\">";
                     document.getElementById(letter + "Under").innerHTML = "";
                 }
             });
@@ -1534,7 +1559,7 @@ function makeAeiou(alphabetosTransmitted, layoutTransmitted, fontTransmitted, va
             result += '<button class="controlButton" onclick="makeAeiou(alphabetos, layout, font, \'default\')">english</button><br><button class="controlButton" onclick="makeAeiou(alphabetos, layout, font, \'german\')">german</button><br><button class="controlButton" onclick="makeAeiou(alphabetos, layout, font, \'dutch\')">dutch</button>';
             break;
         case 'russian':
-            result += '<button class="controlButton" onclick="makeAeiou(alphabetos, layout, font, \'default\')">russian</button><br><button class="controlButton" onclick="makeAeiou(alphabetos, layout, font, \'bulgarian\')">bulgarian</button>';
+            result += '<button class="controlButton" onclick="makeAeiou(alphabetos, layout, font, \'bulgarian\')">bulgarian</button><br><button class="controlButton" onclick="makeAeiou(alphabetos, layout, font, \'default\')">russian</button>';
             break;
         case 'hebrew':
             break;
