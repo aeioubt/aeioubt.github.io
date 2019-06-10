@@ -614,12 +614,12 @@ tableAbcd["hebrew"]["linear"] = '<tr>\
 </tr></table>';
 
 // Hebrew Axial Table
-tableAbcd["hebrew"]["axial"] = '<tr>\
-<td colspan="10" align="center"><button style="color:red" onclick="showLetter(\'א‎\'); new Audio(\'sounds/hebrew/01_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="א‎Pre"></div><div id="א‎Letter">א‎</div><div id="א‎Under"></div><div id="א‎Post"></div></div></button></td>\
-</tr><tr><td colspan="0"></td><td colspan="3" align="center">\
+tableAbcd["hebrew"]["axial"] = '<div id="underDevelopment">&nbsp;</div><tr>\
+<td colspan="7" align="center"><button style="color:red" onclick="showLetter(\'א‎\'); new Audio(\'sounds/hebrew/01_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="א‎Pre"></div><div id="א‎Letter">א‎</div><div id="א‎Under"></div><div id="א‎Post"></div></div></button></td>\
+</tr><tr><td colspan="2"></td><td colspan="3" align="center">\
 <td><button style="color:black" onclick="showLetter(\'ג\'); new Audio(\'sounds/hebrew/03_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="גPre"></div><div id="גLetter">ג</div><div id="גUnder"></div><div id="גPost"></div></div></button></td>\
 <td><button style="color:black" onclick="showLetter(\'ב\'); new Audio(\'sounds/hebrew/02_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="בPre"></div><div id="בLetter">ב</div><div id="בUnder"></div><div id="בPost"></div></div></button></td>\
-</td><td colspan="5"></td></tr><tr><td colspan="4"></td>\
+</td><td colspan="2"></td></tr><tr><td colspan="2"></td>\
 <td><button style="color:black" onclick="showLetter(\'ו\'); new Audio(\'sounds/hebrew/06_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="וPre"></div><div id="וLetter">ו</div><div id="וUnder"></div><div id="וPost"></div></div></button></td>\
 <td><button style="color:red" onclick="showLetter(\'ה\'); new Audio(\'sounds/hebrew/05_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="הPre"></div><div id="הLetter">ה</div><div id="הUnder"></div><div id="הPost"></div></div></button></td>\
 <td><button style="color:black" onclick="showLetter(\'ד\'); new Audio(\'sounds/hebrew/04_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="דPre"></div><div id="דLetter">ד</div><div id="דUnder"></div><div id="דPost"></div></div></button></td>\
@@ -637,7 +637,7 @@ tableAbcd["hebrew"]["axial"] = '<tr>\
 <td><button style="color:red" onclick="showLetter(\'ע\'); new Audio(\'sounds/hebrew/16_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="עPre"></div><div id="עLetter">ע</div><div id="עUnder"></div><div id="עPost"></div></div></button></td>\
 <td><button style="color:black" onclick="showLetter(\'ס\'); new Audio(\'sounds/hebrew/15_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="סPre"></div><div id="סLetter">ס</div><div id="סUnder"></div><div id="סPost"></div></div></button></td>\
 <td><button style="color:black" onclick="showLetter(\'ן\'); new Audio(\'sounds/hebrew/14_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="ןPre"></div><div id="ןLetter">ן</div><div id="ןUnder"></div><div id="ןPost"></div></div></button></td>\
-<td></td></tr><tr><td></td><td colspan="0" align="center">\
+<td></td></tr><tr><td></td><td colspan="5" align="center">\
 <td><button style="color:black" onclick="showLetter(\'ת\'); new Audio(\'sounds/hebrew/22_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="תPre"></div><div id="תLetter">ת</div><div id="תUnder"></div><div id="תPost"></div></div></button></td>\
 <td><button style="color:black" onclick="showLetter(\'ש‎\'); new Audio(\'sounds/hebrew/21_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="ש‎Pre"></div><div id="ש‎Letter">ש‎</div><div id="ש‎Under"></div><div id="ש‎Post"></div></div></button></td>\
 <td><button style="color:black" onclick="showLetter(\'ר\'); new Audio(\'sounds/hebrew/20_0\'+ lastSpoken[\'count\'] +\'.mp3\').play(); return false;"><div class="relative"><div id="רPre"></div><div id="רLetter">ר</div><div id="רUnder"></div><div id="רPost"></div></div></button></td>\
