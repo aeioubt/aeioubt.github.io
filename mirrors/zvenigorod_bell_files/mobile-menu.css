@@ -1,0 +1,28 @@
+@media (max-width: 767px) {	
+	
+	ul#search-tabs {
+	    white-space: normal;	    
+	    overflow-x: unset;
+	    overflow-y: unset;
+	    overflow: hidden;
+    	padding: 10px;
+	}
+
+	ul#search-tabs li, ul#search-tabs li.active {
+	    float: left;
+	    display: block;
+	    width: 50%;
+	    max-width: 50%;
+	    margin: 6px 0;
+    	box-sizing: border-box;
+	}
+	
+	ul#search-tabs li:first-child {
+		width: 100%;
+    	max-width: 100%;
+	}
+
+	ul#search-tabs li a {
+		border-bottom: none; 
+	}
+}
