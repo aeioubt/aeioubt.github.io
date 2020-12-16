@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="1087" height="1476" version="1.0" id="svg904" sodipodi:docname="Morse comparison.svg" inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata id="metadata908">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title/>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1920" inkscape:window-height="1017" id="namedview906" showgrid="false" inkscape:zoom="0.45224174" inkscape:cx="543.5" inkscape:cy="738" inkscape:window-x="1912" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="svg904"/>
+  <defs id="defs4">
+    <rect ry="5.4" height="16.44" width="36.7" id="dhA" fill="#000"/>
+    <rect ry="5.4" height="16.44" width="18.5" id="dtA" fill="#000"/>
+    <rect ry="5.4" height="16.44" width="54.9" id="dhC" fill="#000"/>
+  </defs>
+  <text style="font-size: 20px; font-style: normal; font-weight: bold; font-stretch: normal; text-align: middle; line-height: 100%; text-anchor: middle; fill:#000); font-family: Arial;" id="text88">
+    <tspan x="43" y="123" id="tspan6">A</tspan>
+    <tspan x="43" y="155.4" id="tspan8">Ä</tspan>
+    <tspan x="43" y="187.8" id="tspan10">B</tspan>
+    <tspan x="43" y="220.2" id="tspan12">C</tspan>
+    <tspan x="43" y="252.6" id="tspan14">CH</tspan>
+    <tspan x="43" y="285" id="tspan16">D</tspan>
+    <tspan x="43" y="317.4" id="tspan18">E</tspan>
+    <tspan x="43" y="349.8" id="tspan20">F</tspan>
+    <tspan x="43" y="382.2" id="tspan22">G</tspan>
+    <tspan x="43" y="414.6" id="tspan24">H</tspan>
+    <tspan x="43" y="447" id="tspan26">I</tspan>
+    <tspan x="43" y="479.4" id="tspan28">J</tspan>
+    <tspan x="43" y="511.8" id="tspan30">K</tspan>
+    <tspan x="43" y="544.2" id="tspan32">L</tspan>
+    <tspan x="43" y="576.6" id="tspan34">M</tspan>
+    <tspan x="43" y="609" id="tspan36">N</tspan>
+    <tspan x="43" y="641.4" id="tspan38">O</tspan>
+    <tspan x="43" y="672.8" id="tspan40">Ö</tspan>
+    <tspan x="43" y="705.2" id="tspan42">P</tspan>
+    <tspan x="43" y="737.4" id="tspan44">Q</tspan>
+    <tspan x="43" y="769.8" id="tspan46">R</tspan>
+    <tspan x="43" y="802.2" id="tspan48">S</tspan>
+    <tspan x="43" y="834.6" id="tspan50">T</tspan>
+    <tspan x="43" y="867" id="tspan52">U</tspan>
+    <tspan x="43" y="899.4" id="tspan54">Ü</tspan>
+    <tspan x="43" y="931.8" id="tspan56">V</tspan>
+    <tspan x="43" y="964.2" id="tspan58">W</tspan>
+    <tspan x="43" y="996.6" id="tspan60">X</tspan>
+    <tspan x="43" y="1029" id="tspan62">Y</tspan>
+    <tspan x="43" y="1061.4" id="tspan64">Z</tspan>
+    <tspan x="43" y="1133" id="tspan66">1</tspan>
+    <tspan x="43" y="1165.4" id="tspan68">2</tspan>
+    <tspan x="43" y="1197.8" id="tspan70">3</tspan>
+    <tspan x="43" y="1230.2" id="tspan72">4</tspan>
+    <tspan x="43" y="1262.6" id="tspan74">5</tspan>
+    <tspan x="43" y="1295" id="tspan76">6</tspan>
+    <tspan x="43" y="1327.4" id="tspan78">7</tspan>
+    <tspan x="43" y="1359.8" id="tspan80">8</tspan>
+    <tspan x="43" y="1392.2" id="tspan82">9</tspan>
+    <tspan x="43" y="1424.6" id="tspan84">0</tspan>
+    <tspan x="43" y="1457" id="tspan86">0 (alt)</tspan>
+  </text>
+  <text style="font-size: 32px; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; text-align: center; text-anchor: middle; fill:#000; font-family: Arial;" id="text102">
+    <tspan x="160" y="32" id="tspan90">American</tspan>
+    <tspan x="160" y="64" id="tspan92">(Morse)</tspan>
+    <tspan x="480" y="32" id="tspan94">Continental</tspan>
+    <tspan x="480" y="64" id="tspan96">(Gerke)</tspan>
+    <tspan x="810" y="32" id="tspan98">International</tspan>
+    <tspan x="810" y="64" id="tspan100">(ITU)</tspan>
+  </text>
+  <!-- American -->
+  <!-- A -->
+  <use xlink:href="#dtA" x="86.57" y="107.2" id="use104"/>
+  <use xlink:href="#dhA" x="123.57" y="107.2" id="use106"/>
+  <!-- B -->
+  <use xlink:href="#dhA" x="86.57" y="172.2" id="use108"/>
+  <use xlink:href="#dtA" x="142.05" y="172.2" id="use110"/>
+  <use xlink:href="#dtA" x="179.05" y="172.2" id="use112"/>
+  <use xlink:href="#dtA" x="216.05" y="172.2" id="use114"/>
+  <!-- C -->
+  <use xlink:href="#dtA" x="86.57" y="204.6" id="use116"/>
+  <use xlink:href="#dtA" x="123.57" y="204.6" id="use118"/>
+  <use xlink:href="#dtA" x="179" y="204.6" id="use120"/>
+  <!-- D -->
+  <use xlink:href="#dhA" x="86.57" y="269.5" id="use122"/>
+  <use xlink:href="#dtA" x="142.1" y="269.5" id="use124"/>
+  <use xlink:href="#dtA" x="179.1" y="269.5" id="use126"/>
+  <!-- E -->
+  <use xlink:href="#dtA" x="86.57" y="302" id="use128"/>
+  <!-- F -->
+  <use xlink:href="#dtA" x="86.57" y="334.5" id="use130"/>
+  <use xlink:href="#dhA" x="123.57" y="334.5" id="use132"/>
+  <use xlink:href="#dtA" x="179" y="334.5" id="use134"/>
+  <!-- G -->
+  <use xlink:href="#dhA" x="86.57" y="366.8" id="use136"/>
+  <use xlink:href="#dhA" x="142.05" y="366.8" id="use138"/>
+  <use xlink:href="#dtA" x="197.6" y="366.8" id="use140"/>
+  <!-- H -->
+  <use xlink:href="#dtA" x="86.57" y="399.2" id="use142"/>
+  <use xlink:href="#dtA" x="123.57" y="399.2" id="use144"/>
+  <use xlink:href="#dtA" x="160.57" y="399.2" id="use146"/>
+  <use xlink:href="#dtA" x="197.57" y="399.2" id="use148"/>
+  <!-- I -->
+  <use xlink:href="#dtA" x="86.57" y="431.8" id="use150"/>
+  <use xlink:href="#dtA" x="123.57" y="431.8" id="use152"/>
+  <!-- J -->
+  <use xlink:href="#dhA" x="86.57" y="464.1" id="use154"/>
+  <use xlink:href="#dtA" x="142.1" y="464.1" id="use156"/>
+  <use xlink:href="#dhA" x="179.1" y="464.1" id="use158"/>
+  <use xlink:href="#dtA" x="234.6" y="464.1" id="use160"/>
+  <!-- K -->
+  <use xlink:href="#dhA" x="86.57" y="496.6" id="use162"/>
+  <use xlink:href="#dtA" x="142.1" y="496.6" id="use164"/>
+  <use xlink:href="#dhA" x="179.1" y="496.6" id="use166"/>
+  <!-- use xlink:href="#dtA" x="235.1" y="496.6"/ -->
+  <rect ry="5.4" x="86.57" y="529" height="16.44" width="74.2" id="rect168"/>
+  <!-- M -->
+  <use xlink:href="#dhA" x="86.57" y="561.5" id="use170"/>
+  <use xlink:href="#dhA" x="142.1" y="561.5" id="use172"/>
+  <!-- N -->
+  <use xlink:href="#dhA" x="86.57" y="594" id="use174"/>
+  <use xlink:href="#dtA" x="142.1" y="594" id="use176"/>
+  <!-- O -->
+  <use xlink:href="#dtA" x="86.57" y="626.4" id="use178"/>
+  <use xlink:href="#dtA" x="142.1" y="626.4" id="use180"/>
+  <!-- P -->
+  <use xlink:href="#dtA" x="86.57" y="691.3" id="use182"/>
+  <use xlink:href="#dtA" x="123.57" y="691.3" id="use184"/>
+  <use xlink:href="#dtA" x="160.57" y="691.3" id="use186"/>
+  <use xlink:href="#dtA" x="197.57" y="691.3" id="use188"/>
+  <use xlink:href="#dtA" x="234.57" y="691.3" id="use190"/>
+  <!-- Q -->
+  <use xlink:href="#dtA" x="86.57" y="723.7" id="use192"/>
+  <use xlink:href="#dtA" x="123.57" y="723.7" id="use194"/>
+  <use xlink:href="#dhA" x="160.57" y="723.7" id="use196"/>
+  <use xlink:href="#dtA" x="216.1" y="723.7" id="use198"/>
+  <!-- R -->
+  <use xlink:href="#dtA" x="86.57" y="756.2" id="use200"/>
+  <use xlink:href="#dtA" x="142.1" y="756.2" id="use202"/>
+  <use xlink:href="#dtA" x="179.1" y="756.2" id="use204"/>
+  <!-- S -->
+  <use xlink:href="#dtA" x="86.57" y="788.6" id="use206"/>
+  <use xlink:href="#dtA" x="123.57" y="788.6" id="use208"/>
+  <use xlink:href="#dtA" x="160.57" y="788.6" id="use210"/>
+  <!-- T -->
+  <use xlink:href="#dhA" x="86.57" y="821" id="use212"/>
+  <!-- U -->
+  <use xlink:href="#dtA" x="86.57" y="853.5" id="use214"/>
+  <use xlink:href="#dtA" x="123.57" y="853.5" id="use216"/>
+  <use xlink:href="#dhA" x="160.57" y="853.5" id="use218"/>
+  <!-- V -->
+  <use xlink:href="#dtA" x="86.57" y="918.5" id="use220"/>
+  <use xlink:href="#dtA" x="123.57" y="918.5" id="use222"/>
+  <use xlink:href="#dtA" x="160.57" y="918.5" id="use224"/>
+  <use xlink:href="#dhA" x="197.57" y="918.5" id="use226"/>
+  <!-- W -->
+  <use xlink:href="#dtA" x="86.57" y="950.9" id="use228"/>
+  <use xlink:href="#dhA" x="123.57" y="950.9" id="use230"/>
+  <use xlink:href="#dhA" x="179" y="950.9" id="use232"/>
+  <!-- X -->
+  <use xlink:href="#dtA" x="86.57" y="983.3" id="use234"/>
+  <use xlink:href="#dhA" x="123.57" y="983.3" id="use236"/>
+  <use xlink:href="#dtA" x="179" y="983.3" id="use238"/>
+  <use xlink:href="#dtA" x="216.1" y="983.3" id="use240"/>
+  <!-- Y -->
+  <use xlink:href="#dtA" x="86.57" y="1015.7" id="use242"/>
+  <use xlink:href="#dtA" x="123.57" y="1015.7" id="use244"/>
+  <use xlink:href="#dtA" x="179" y="1015.7" id="use246"/>
+  <use xlink:href="#dtA" x="216.1" y="1015.7" id="use248"/>
+  <!-- Z -->
+  <use xlink:href="#dtA" x="86.57" y="1048.2" id="use250"/>
+  <use xlink:href="#dtA" x="123.57" y="1048.2" id="use252"/>
+  <use xlink:href="#dtA" x="160.57" y="1048.2" id="use254"/>
+  <use xlink:href="#dtA" x="216.1" y="1048.2" id="use256"/>
+  <!-- 1 -->
+  <use xlink:href="#dtA" x="86.57" y="1119.8" id="use258"/>
+  <use xlink:href="#dhA" x="123.57" y="1119.8" id="use260"/>
+  <use xlink:href="#dhA" x="179.1" y="1119.8" id="use262"/>
+  <use xlink:href="#dtA" x="234.6" y="1119.8" id="use264"/>
+  <!-- 2 -->
+  <use xlink:href="#dtA" x="86.57" y="1152.25" id="use266"/>
+  <use xlink:href="#dtA" x="123.57" y="1152.25" id="use268"/>
+  <use xlink:href="#dhA" x="160.57" y="1152.25" id="use270"/>
+  <use xlink:href="#dtA" x="216" y="1152.25" id="use272"/>
+  <use xlink:href="#dtA" x="253" y="1152.25" id="use274"/>
+  <!-- 3 -->
+  <use xlink:href="#dtA" x="86.57" y="1184.6" id="use276"/>
+  <use xlink:href="#dtA" x="123.57" y="1184.6" id="use278"/>
+  <use xlink:href="#dtA" x="160.57" y="1184.6" id="use280"/>
+  <use xlink:href="#dhA" x="197.57" y="1184.6" id="use282"/>
+  <use xlink:href="#dtA" x="253" y="1184.6" id="use284"/>
+  <!-- 4 -->
+  <use xlink:href="#dtA" x="86.57" y="1217" id="use286"/>
+  <use xlink:href="#dtA" x="123.57" y="1217" id="use288"/>
+  <use xlink:href="#dtA" x="160.57" y="1217" id="use290"/>
+  <use xlink:href="#dtA" x="197.57" y="1217" id="use292"/>
+  <use xlink:href="#dhA" x="234.57" y="1217" id="use294"/>
+  <!-- 5 -->
+  <use xlink:href="#dhA" x="86.57" y="1249.4" id="use296"/>
+  <use xlink:href="#dhA" x="142.05" y="1249.4" id="use298"/>
+  <use xlink:href="#dhA" x="197.6" y="1249.4" id="use300"/>
+  <!-- 6 -->
+  <use xlink:href="#dtA" x="86.57" y="1281.8" id="use302"/>
+  <use xlink:href="#dtA" x="123.57" y="1281.8" id="use304"/>
+  <use xlink:href="#dtA" x="160.57" y="1281.8" id="use306"/>
+  <use xlink:href="#dtA" x="197.57" y="1281.8" id="use308"/>
+  <use xlink:href="#dtA" x="234.57" y="1281.8" id="use310"/>
+  <use xlink:href="#dtA" x="271.57" y="1281.8" id="use312"/>
+  <!-- 7 -->
+  <use xlink:href="#dhA" x="86.57" y="1314.2" id="use314"/>
+  <use xlink:href="#dhA" x="142.05" y="1314.2" id="use316"/>
+  <use xlink:href="#dtA" x="197.55" y="1314.2" id="use318"/>
+  <use xlink:href="#dtA" x="234.55" y="1314.2" id="use320"/>
+  <!-- 8 -->
+  <use xlink:href="#dhA" x="86.57" y="1346.6" id="use322"/>
+  <use xlink:href="#dtA" x="142.05" y="1346.6" id="use324"/>
+  <use xlink:href="#dtA" x="179.05" y="1346.6" id="use326"/>
+  <use xlink:href="#dtA" x="216.05" y="1346.6" id="use328"/>
+  <use xlink:href="#dtA" x="253.05" y="1346.6" id="use330"/>
+  <!-- 9 -->
+  <use xlink:href="#dhA" x="86.57" y="1379" id="use332"/>
+  <use xlink:href="#dtA" x="142.05" y="1379" id="use334"/>
+  <use xlink:href="#dtA" x="179.05" y="1379" id="use336"/>
+  <use xlink:href="#dhA" x="216.05" y="1379" id="use338"/>
+  <rect ry="5.4" x="86.57" y="1411.4" height="16.44" width="201.5" id="rect340"/>
+  <use xlink:href="#dhA" x="86.57" y="1443.78" id="use342"/>
+  <!-- Continental -->
+  <!-- A -->
+  <use xlink:href="#dtA" x="379.8" y="107.2" id="use344"/>
+  <use xlink:href="#dhC" x="416.8" y="107.2" id="use346"/>
+  <!-- A umlaut -->
+  <use xlink:href="#dtA" x="379.8" y="139.8" id="use348"/>
+  <use xlink:href="#dhC" x="416.8" y="139.8" id="use350"/>
+  <use xlink:href="#dtA" x="490.2" y="139.8" id="use352"/>
+  <use xlink:href="#dhC" x="526.6" y="139.8" id="use354"/>
+  <!-- B -->
+  <use xlink:href="#dhC" x="379.8" y="172.2" id="use356"/>
+  <use xlink:href="#dtA" x="453.2" y="172.2" id="use358"/>
+  <use xlink:href="#dtA" x="490.2" y="172.2" id="use360"/>
+  <use xlink:href="#dtA" x="527.3" y="172.2" id="use362"/>
+  <!-- C -->
+  <use xlink:href="#dhC" x="379.8" y="204.6" id="use364"/>
+  <use xlink:href="#dtA" x="453.2" y="204.6" id="use366"/>
+  <use xlink:href="#dhC" x="490.2" y="204.6" id="use368"/>
+  <use xlink:href="#dtA" x="564.2" y="204.6" id="use370"/>
+  <!-- CH -->
+  <use xlink:href="#dhC" x="379.8" y="237" id="use372"/>
+  <use xlink:href="#dhC" x="453.2" y="237" id="use374"/>
+  <use xlink:href="#dhC" x="526.6" y="237" id="use376"/>
+  <use xlink:href="#dhC" x="600.1" y="237" id="use378"/>
+  <!-- D -->
+  <use xlink:href="#dhC" x="379.8" y="269.5" id="use380"/>
+  <use xlink:href="#dtA" x="453.2" y="269.5" id="use382"/>
+  <use xlink:href="#dtA" x="490.2" y="269.5" id="use384"/>
+  <!-- E -->
+  <use xlink:href="#dtA" x="379.8" y="302" id="use386"/>
+  <!-- F -->
+  <use xlink:href="#dtA" x="379.8" y="334.5" id="use388"/>
+  <use xlink:href="#dtA" x="416.8" y="334.5" id="use390"/>
+  <use xlink:href="#dhC" x="453.8" y="334.5" id="use392"/>
+  <use xlink:href="#dtA" x="527.8" y="334.5" id="use394"/>
+  <!-- G -->
+  <use xlink:href="#dhC" x="379.8" y="366.8" id="use396"/>
+  <use xlink:href="#dhC" x="453.2" y="366.8" id="use398"/>
+  <use xlink:href="#dtA" x="526.6" y="366.8" id="use400"/>
+  <!-- H -->
+  <use xlink:href="#dtA" x="379.8" y="399.2" id="use402"/>
+  <use xlink:href="#dtA" x="416.8" y="399.2" id="use404"/>
+  <use xlink:href="#dtA" x="453.8" y="399.2" id="use406"/>
+  <use xlink:href="#dtA" x="490.8" y="399.2" id="use408"/>
+  <!-- I -->
+  <use xlink:href="#dtA" x="379.8" y="431.8" id="use410"/>
+  <use xlink:href="#dtA" x="416.8" y="431.8" id="use412"/>
+  <!-- J -->
+  <use xlink:href="#dtA" x="379.8" y="464.1" id="use414"/>
+  <!-- K -->
+  <use xlink:href="#dhC" x="379.8" y="496.6" id="use422"/>
+  <use xlink:href="#dtA" x="453.2" y="496.6" id="use424"/>
+  <use xlink:href="#dhC" x="490.2" y="496.6" id="use426"/>
+  <!-- L -->
+  <use xlink:href="#dtA" x="379.8" y="529" id="use428"/>
+  <use xlink:href="#dhC" x="416.8" y="529" id="use430"/>
+  <use xlink:href="#dtA" x="490.2" y="529" id="use432"/>
+  <use xlink:href="#dtA" x="527.2" y="529" id="use434"/>
+  <!-- M -->
+  <use xlink:href="#dhC" x="379.8" y="561.5" id="use436"/>
+  <use xlink:href="#dhC" x="453.2" y="561.5" id="use438"/>
+  <!-- N -->
+  <use xlink:href="#dhC" x="379.8" y="594" id="use440"/>
+  <use xlink:href="#dtA" x="453.2" y="594" id="use442"/>
+  <!-- O -->
+  <use xlink:href="#dtA" x="379.8" y="626.4" id="use444"/>
+  <use xlink:href="#dhC" x="416.8" y="626.4" id="use446"/>
+  <use xlink:href="#dtA" x="490.2" y="626.4" id="use448"/>
+  <use xlink:href="#dtA" x="527.2" y="626.4" id="use450"/>
+  <use xlink:href="#dtA" x="564.2" y="626.4" id="use452"/>
+  <!-- O umlaut -->
+  <use xlink:href="#dhC" x="379.8" y="658.8" id="use454"/>
+  <use xlink:href="#dhC" x="453.2" y="658.8" id="use456"/>
+  <use xlink:href="#dhC" x="526.6" y="658.8" id="use458"/>
+  <use xlink:href="#dtA" x="600.1" y="658.8" id="use460"/>
+  <!-- P -->
+  <use xlink:href="#dtA" x="379.8" y="691.3" id="use462"/>
+  <use xlink:href="#dtA" x="416.8" y="691.3" id="use464"/>
+  <use xlink:href="#dtA" x="453.8" y="691.3" id="use466"/>
+  <use xlink:href="#dtA" x="490.8" y="691.3" id="use468"/>
+  <use xlink:href="#dtA" x="527.8" y="691.3" id="use470"/>
+  <!-- Q -->
+  <use xlink:href="#dhC" x="379.8" y="723.7" id="use472"/>
+  <use xlink:href="#dhC" x="453.2" y="723.7" id="use474"/>
+  <use xlink:href="#dtA" x="526.6" y="723.7" id="use476"/>
+  <use xlink:href="#dhC" x="563.6" y="723.7" id="use478"/>
+  <!-- R -->
+  <use xlink:href="#dtA" x="379.8" y="756.2" id="use480"/>
+  <use xlink:href="#dhC" x="416.8" y="756.2" id="use482"/>
+  <use xlink:href="#dtA" x="490.2" y="756.2" id="use484"/>
+  <!-- S -->
+  <use xlink:href="#dtA" x="379.8" y="788.6" id="use486"/>
+  <use xlink:href="#dtA" x="416.8" y="788.6" id="use488"/>
+  <use xlink:href="#dtA" x="453.8" y="788.6" id="use490"/>
+  <!-- T -->
+  <use xlink:href="#dhC" x="379.8" y="821" id="use492"/>
+  <!-- U -->
+  <use xlink:href="#dtA" x="379.8" y="853.5" id="use494"/>
+  <use xlink:href="#dtA" x="416.8" y="853.5" id="use496"/>
+  <use xlink:href="#dhC" x="453.8" y="853.5" id="use498"/>
+  <!-- U umalut -->
+  <use xlink:href="#dtA" x="379.8" y="886" id="use500"/>
+  <use xlink:href="#dtA" x="416.8" y="886" id="use502"/>
+  <use xlink:href="#dhC" x="453.8" y="886" id="use504"/>
+  <use xlink:href="#dhC" x="527.2" y="886" id="use506"/>
+  <!-- V -->
+  <use xlink:href="#dtA" x="379.8" y="918.5" id="use508"/>
+  <use xlink:href="#dtA" x="416.8" y="918.5" id="use510"/>
+  <use xlink:href="#dtA" x="453.8" y="918.5" id="use512"/>
+  <use xlink:href="#dhC" x="490.8" y="918.5" id="use514"/>
+  <!-- W -->
+  <use xlink:href="#dtA" x="379.8" y="950.9" id="use516"/>
+  <use xlink:href="#dhC" x="416.8" y="950.9" id="use518"/>
+  <use xlink:href="#dhC" x="490.8" y="950.9" id="use520"/>
+  <!-- X -->
+  <use xlink:href="#dtA" x="379.8" y="983.3" id="use522"/>
+  <use xlink:href="#dtA" x="416.8" y="983.3" id="use524"/>
+  <use xlink:href="#dhC" x="453.2" y="983.3" id="use526"/>
+  <use xlink:href="#dtA" x="526.6" y="983.3" id="use528"/>
+  <use xlink:href="#dtA" x="563.6" y="983.3" id="use530"/>
+  <use xlink:href="#dtA" x="600.7" y="983.3" id="use532"/>
+  <!-- Y -->
+  <use xlink:href="#dhC" x="379.8" y="1015.7" id="use534"/>
+  <use xlink:href="#dhC" x="453.2" y="1015.7" id="use536"/>
+  <use xlink:href="#dtA" x="526.6" y="1015.7" id="use538"/>
+  <use xlink:href="#dtA" x="563.6" y="1015.7" id="use540"/>
+  <use xlink:href="#dtA" x="600.7" y="1015.7" id="use542"/>
+  <!-- Z -->
+  <use xlink:href="#dtA" x="379.8" y="1048.2" id="use544"/>
+  <use xlink:href="#dhC" x="416.8" y="1048.2" id="use546"/>
+  <use xlink:href="#dhC" x="490.2" y="1048.2" id="use548"/>
+  <use xlink:href="#dtA" x="563.7" y="1048.2" id="use550"/>
+  <use xlink:href="#dtA" x="600.7" y="1048.2" id="use552"/>
+  <!-- 1 -->
+  <use xlink:href="#dtA" x="379.8" y="1119.8" id="use554"/>
+  <use xlink:href="#dhC" x="416.8" y="1119.8" id="use556"/>
+  <use xlink:href="#dhC" x="490.8" y="1119.8" id="use558"/>
+  <use xlink:href="#dtA" x="564.8" y="1119.8" id="use560"/>
+  <!-- 2 -->
+  <use xlink:href="#dtA" x="379.8" y="1152.25" id="use562"/>
+  <use xlink:href="#dtA" x="416.8" y="1152.25" id="use564"/>
+  <use xlink:href="#dhC" x="453.8" y="1152.25" id="use566"/>
+  <use xlink:href="#dtA" x="527.8" y="1152.25" id="use568"/>
+  <use xlink:href="#dtA" x="564.8" y="1152.25" id="use570"/>
+  <!-- 3 -->
+  <use xlink:href="#dtA" x="379.8" y="1184.6" id="use572"/>
+  <use xlink:href="#dtA" x="416.8" y="1184.6" id="use574"/>
+  <use xlink:href="#dtA" x="453.8" y="1184.6" id="use576"/>
+  <use xlink:href="#dhC" x="490.8" y="1184.6" id="use578"/>
+  <use xlink:href="#dtA" x="564.8" y="1184.6" id="use580"/>
+  <!-- 4 -->
+  <use xlink:href="#dtA" x="379.8" y="1217" id="use582"/>
+  <use xlink:href="#dtA" x="416.8" y="1217" id="use584"/>
+  <use xlink:href="#dtA" x="453.8" y="1217" id="use586"/>
+  <use xlink:href="#dtA" x="490.8" y="1217" id="use588"/>
+  <use xlink:href="#dhC" x="527.8" y="1217" id="use590"/>
+  <!-- 5 -->
+  <use xlink:href="#dhC" x="379.8" y="1249.4" id="use592"/>
+  <use xlink:href="#dhC" x="453.2" y="1249.4" id="use594"/>
+  <use xlink:href="#dhC" x="526.6" y="1249.4" id="use596"/>
+  <!-- 6 -->
+  <use xlink:href="#dtA" x="379.8" y="1281.8" id="use598"/>
+  <use xlink:href="#dtA" x="416.8" y="1281.8" id="use600"/>
+  <use xlink:href="#dtA" x="453.8" y="1281.8" id="use602"/>
+  <use xlink:href="#dtA" x="490.8" y="1281.8" id="use604"/>
+  <use xlink:href="#dtA" x="527.8" y="1281.8" id="use606"/>
+  <use xlink:href="#dtA" x="564.8" y="1281.8" id="use608"/>
+  <!-- 7 -->
+  <use xlink:href="#dhC" x="379.8" y="1314.1" id="use610"/>
+  <use xlink:href="#dhC" x="453.2" y="1314.1" id="use612"/>
+  <use xlink:href="#dtA" x="527.3" y="1314.1" id="use614"/>
+  <use xlink:href="#dtA" x="563.6" y="1314.1" id="use616"/>
+  <!-- 8 -->
+  <use xlink:href="#dhC" x="379.8" y="1346.6" id="use618"/>
+  <use xlink:href="#dtA" x="453.2" y="1346.6" id="use620"/>
+  <use xlink:href="#dtA" x="490.2" y="1346.6" id="use622"/>
+  <use xlink:href="#dtA" x="527.3" y="1346.6" id="use624"/>
+  <use xlink:href="#dtA" x="563.6" y="1346.6" id="use626"/>
+  <!-- 9 -->
+  <use xlink:href="#dhC" x="379.8" y="1379" id="use628"/>
+  <use xlink:href="#dtA" x="453.2" y="1379" id="use630"/>
+  <use xlink:href="#dtA" x="490.2" y="1379" id="use632"/>
+  <use xlink:href="#dhC" x="527.3" y="1379" id="use634"/>
+  <rect ry="5.4" x="379.8" y="1411.4" height="16.44" width="201.5" id="rect636"/>
+  <!-- ITU -->
+  <!-- A -->
+  <use xlink:href="#dtA" x="709.4" y="107.2" id="use638"/>
+  <use xlink:href="#dhC" x="746.4" y="107.2" id="use640"/>
+  <!-- B -->
+  <use xlink:href="#dhC" x="709.4" y="172.2" id="use642"/>
+  <use xlink:href="#dtA" x="782.8" y="172.2" id="use644"/>
+  <use xlink:href="#dtA" x="819.9" y="172.2" id="use646"/>
+  <use xlink:href="#dtA" x="856.9" y="172.2" id="use648"/>
+  <!-- C -->
+  <use xlink:href="#dhC" x="709.4" y="204.6" id="use650"/>
+  <use xlink:href="#dtA" x="782.8" y="204.6" id="use652"/>
+  <use xlink:href="#dhC" x="819.9" y="204.6" id="use654"/>
+  <use xlink:href="#dtA" x="893.3" y="204.6" id="use656"/>
+  <!-- D -->
+  <use xlink:href="#dhC" x="709.4" y="269.5" id="use658"/>
+  <use xlink:href="#dtA" x="782.8" y="269.5" id="use660"/>
+  <use xlink:href="#dtA" x="819.9" y="269.5" id="use662"/>
+  <!-- E -->
+  <use xlink:href="#dtA" x="709.4" y="302" id="use664"/>
+  <!-- F -->
+  <use xlink:href="#dtA" x="709.4" y="334.5" id="use666"/>
+  <use xlink:href="#dtA" x="746.8" y="334.5" id="use668"/>
+  <use xlink:href="#dhC" x="783.5" y="334.5" id="use670"/>
+  <use xlink:href="#dtA" x="857" y="334.5" id="use672"/>
+  <!-- G -->
+  <use xlink:href="#dhC" x="709.4" y="366.8" id="use674"/>
+  <use xlink:href="#dhC" x="783.5" y="366.8" id="use676"/>
+  <use xlink:href="#dtA" x="857" y="366.8" id="use678"/>
+  <!-- H -->
+  <use xlink:href="#dtA" x="709.4" y="399.2" id="use680"/>
+  <use xlink:href="#dtA" x="746.4" y="399.2" id="use682"/>
+  <use xlink:href="#dtA" x="783.4" y="399.2" id="use684"/>
+  <use xlink:href="#dtA" x="820.4" y="399.2" id="use686"/>
+  <!-- I -->
+  <use xlink:href="#dtA" x="709.4" y="431.8" id="use688"/>
+  <use xlink:href="#dtA" x="746.4" y="431.8" id="use690"/>
+  <!-- J -->
+  <use xlink:href="#dtA" x="709.4" y="464.1" id="use692"/>
+  <use xlink:href="#dhC" x="746.4" y="464.1" id="use694"/>
+  <use xlink:href="#dhC" x="819.8" y="464.1" id="use696"/>
+  <use xlink:href="#dhC" x="893.3" y="464.1" id="use698"/>
+  <!-- K -->
+  <use xlink:href="#dhC" x="709.4" y="496.6" id="use700"/>
+  <use xlink:href="#dtA" x="782.8" y="496.6" id="use702"/>
+  <use xlink:href="#dhC" x="819.9" y="496.6" id="use704"/>
+  <!-- L -->
+  <use xlink:href="#dtA" x="709.4" y="529" id="use706"/>
+  <use xlink:href="#dhC" x="746.4" y="529" id="use708"/>
+  <use xlink:href="#dtA" x="819.8" y="529" id="use710"/>
+  <use xlink:href="#dtA" x="856.8" y="529" id="use712"/>
+  <!-- M -->
+  <use xlink:href="#dhC" x="709.4" y="561.5" id="use714"/>
+  <use xlink:href="#dhC" x="783.5" y="561.5" id="use716"/>
+  <!-- N -->
+  <use xlink:href="#dhC" x="709.4" y="594" id="use718"/>
+  <use xlink:href="#dtA" x="783.5" y="594" id="use720"/>
+  <!-- O -->
+  <use xlink:href="#dhC" x="709.4" y="626.4" id="use722"/>
+  <use xlink:href="#dhC" x="783.5" y="626.4" id="use724"/>
+  <use xlink:href="#dhC" x="857" y="626.4" id="use726"/>
+  <!-- P -->
+  <use xlink:href="#dtA" x="709.4" y="691.3" id="use728"/>
+  <use xlink:href="#dhC" x="746.4" y="691.3" id="use730"/>
+  <use xlink:href="#dhC" x="819.8" y="691.3" id="use732"/>
+  <use xlink:href="#dtA" x="893.3" y="691.3" id="use734"/>
+  <!-- Q -->
+  <use xlink:href="#dhC" x="709.4" y="723.7" id="use736"/>
+  <use xlink:href="#dhC" x="783.5" y="723.7" id="use738"/>
+  <use xlink:href="#dtA" x="857" y="723.7" id="use740"/>
+  <use xlink:href="#dhC" x="894" y="723.7" id="use742"/>
+  <!-- R -->
+  <use xlink:href="#dtA" x="709.4" y="756.2" id="use744"/>
+  <use xlink:href="#dhC" x="746.4" y="756.2" id="use746"/>
+  <use xlink:href="#dtA" x="819.8" y="756.2" id="use748"/>
+  <!-- S -->
+  <use xlink:href="#dtA" x="709.4" y="788.6" id="use750"/>
+  <use xlink:href="#dtA" x="746.4" y="788.6" id="use752"/>
+  <use xlink:href="#dtA" x="783.4" y="788.6" id="use754"/>
+  <!-- T -->
+  <use xlink:href="#dhC" x="709.4" y="821" id="use756"/>
+  <!-- U -->
+  <use xlink:href="#dtA" x="709.4" y="853.5" id="use758"/>
+  <use xlink:href="#dtA" x="746.8" y="853.5" id="use760"/>
+  <use xlink:href="#dhC" x="783.5" y="853.5" id="use762"/>
+  <!-- V -->
+  <use xlink:href="#dtA" x="709.4" y="918.5" id="use764"/>
+  <use xlink:href="#dtA" x="746.4" y="918.5" id="use766"/>
+  <use xlink:href="#dtA" x="783.4" y="918.5" id="use768"/>
+  <use xlink:href="#dhC" x="820.4" y="918.5" id="use770"/>
+  <!-- W -->
+  <use xlink:href="#dtA" x="709.4" y="950.9" id="use772"/>
+  <use xlink:href="#dhC" x="746.4" y="950.9" id="use774"/>
+  <use xlink:href="#dhC" x="819.8" y="950.9" id="use776"/>
+  <!-- X -->
+  <use xlink:href="#dhC" x="709.4" y="983.3" id="use778"/>
+  <use xlink:href="#dtA" x="782.8" y="983.3" id="use780"/>
+  <use xlink:href="#dtA" x="819.9" y="983.3" id="use782"/>
+  <use xlink:href="#dhC" x="856.9" y="983.3" id="use784"/>
+  <!-- Y -->
+  <use xlink:href="#dhC" x="709.4" y="1015.7" id="use786"/>
+  <use xlink:href="#dtA" x="782.8" y="1015.7" id="use788"/>
+  <use xlink:href="#dhC" x="819.9" y="1015.7" id="use790"/>
+  <use xlink:href="#dhC" x="893.3" y="1015.7" id="use792"/>
+  <!-- Z -->
+  <use xlink:href="#dhC" x="709.4" y="1048.2" id="use794"/>
+  <use xlink:href="#dhC" x="783.5" y="1048.2" id="use796"/>
+  <use xlink:href="#dtA" x="857" y="1048.2" id="use798"/>
+  <use xlink:href="#dtA" x="894" y="1048.2" id="use800"/>
+  <!-- 1 -->
+  <use xlink:href="#dtA" x="709.4" y="1119.8" id="use802"/>
+  <use xlink:href="#dhC" x="746.4" y="1119.8" id="use804"/>
+  <use xlink:href="#dhC" x="819.8" y="1119.8" id="use806"/>
+  <use xlink:href="#dhC" x="893.2" y="1119.8" id="use808"/>
+  <use xlink:href="#dhC" x="966.6" y="1119.8" id="use810"/>
+  <!-- 2 -->
+  <use xlink:href="#dtA" x="709.4" y="1152.25" id="use812"/>
+  <use xlink:href="#dtA" x="746.8" y="1152.25" id="use814"/>
+  <use xlink:href="#dhC" x="783.5" y="1152.25" id="use816"/>
+  <use xlink:href="#dhC" x="857" y="1152.25" id="use818"/>
+  <use xlink:href="#dhC" x="930.5" y="1152.25" id="use820"/>
+  <!-- 3 -->
+  <use xlink:href="#dtA" x="709.4" y="1184.6" id="use822"/>
+  <use xlink:href="#dtA" x="746.8" y="1184.6" id="use824"/>
+  <use xlink:href="#dtA" x="783.5" y="1184.6" id="use826"/>
+  <use xlink:href="#dhC" x="820.4" y="1184.6" id="use828"/>
+  <use xlink:href="#dhC" x="893.9" y="1184.6" id="use830"/>
+  <!-- 4 -->
+  <use xlink:href="#dtA" x="709.4" y="1217" id="use832"/>
+  <use xlink:href="#dtA" x="746.8" y="1217" id="use834"/>
+  <use xlink:href="#dtA" x="783.5" y="1217" id="use836"/>
+  <use xlink:href="#dtA" x="820.4" y="1217" id="use838"/>
+  <use xlink:href="#dhC" x="857.4" y="1217" id="use840"/>
+  <!-- 5 -->
+  <use xlink:href="#dtA" x="709.4" y="1249.4" id="use842"/>
+  <use xlink:href="#dtA" x="746.8" y="1249.4" id="use844"/>
+  <use xlink:href="#dtA" x="783.5" y="1249.4" id="use846"/>
+  <use xlink:href="#dtA" x="820.4" y="1249.4" id="use848"/>
+  <use xlink:href="#dtA" x="857.4" y="1249.4" id="use850"/>
+  <!-- 6 -->
+  <use xlink:href="#dhC" x="709.4" y="1281.8" id="use852"/>
+  <use xlink:href="#dtA" x="783.5" y="1281.8" id="use854"/>
+  <use xlink:href="#dtA" x="820" y="1281.8" id="use856"/>
+  <use xlink:href="#dtA" x="857" y="1281.8" id="use858"/>
+  <use xlink:href="#dtA" x="894" y="1281.8" id="use860"/>
+  <!-- 7 -->
+  <use xlink:href="#dhC" x="709.4" y="1314.1" id="use862"/>
+  <use xlink:href="#dhC" x="783.5" y="1314.1" id="use864"/>
+  <use xlink:href="#dtA" x="857" y="1314.1" id="use866"/>
+  <use xlink:href="#dtA" x="894" y="1314.1" id="use868"/>
+  <use xlink:href="#dtA" x="931" y="1314.1" id="use870"/>
+  <!-- 8 -->
+  <use xlink:href="#dhC" x="709.4" y="1346.6" id="use872"/>
+  <use xlink:href="#dhC" x="783.5" y="1346.6" id="use874"/>
+  <use xlink:href="#dhC" x="857" y="1346.6" id="use876"/>
+  <use xlink:href="#dtA" x="931" y="1346.6" id="use878"/>
+  <use xlink:href="#dtA" x="968" y="1346.6" id="use880"/>
+  <!-- 9 -->
+  <use xlink:href="#dhC" x="709.4" y="1379" id="use882"/>
+  <use xlink:href="#dhC" x="783.5" y="1379" id="use884"/>
+  <use xlink:href="#dhC" x="857" y="1379" id="use886"/>
+  <use xlink:href="#dhC" x="931" y="1379" id="use888"/>
+  <use xlink:href="#dtA" x="1005" y="1379" id="use890"/>
+  <!-- 0 -->
+  <use xlink:href="#dhC" x="709.4" y="1411.4" id="use892"/>
+  <use xlink:href="#dhC" x="783.5" y="1411.4" id="use894"/>
+  <use xlink:href="#dhC" x="857" y="1411.4" id="use896"/>
+  <use xlink:href="#dhC" x="931" y="1411.4" id="use898"/>
+  <use xlink:href="#dhC" x="1005" y="1411.4" id="use900"/>
+  <use xlink:href="#dhC" x="709.4" y="1443.78" id="use902"/>
+  <use xlink:href="#dtA" x="379.79999" y="464.10001" id="use414-1" width="100%" height="100%" transform="translate(37)"/>
+</svg>
