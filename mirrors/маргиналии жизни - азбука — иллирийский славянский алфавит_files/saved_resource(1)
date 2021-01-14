@@ -1,0 +1,2319 @@
+/* ---------------------------------------------------------------------------------
+   file-start: stc/voxhtml/base.css 
+*/
+
+/* $Id: base.css 36944 2006-08-29 18:13:36Z kgoess $ */
+
+/* base.css - resets default properties */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
+ol, ul, li, dl, dt, dd,
+td, form, fieldset,
+abbr, code {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+table {
+    margin-bottom: 0;
+    margin-top: 0;
+    border: 0;
+    padding: 0;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+a { text-decoration: none; }
+
+ol, ul { list-style: none; }
+
+a img, :link img, :visited img { border: 0; }
+
+.clr,
+.clr-l,
+.clr-r {
+    overflow: hidden;
+    clear: both;
+    width: 1px;
+    height: 1px;
+    margin: 0 -1px -1px 0;
+    border: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+.clr-l {
+    clear: left;
+}
+
+.clr-r {
+    clear: right;
+}
+
+/* .pkg class wraps enclosing block element around inner floated elements */
+.pkg:after {
+    content: " ";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0.1px;
+    font-size: 0.1em;
+    line-height: 0;
+}
+.pkg { display: inline-block; }
+/* no ie mac \*/
+* html .pkg { height: 1%; }
+.pkg[class] { height: auto; }
+.pkg { display: block; }
+/* */
+
+.hidden { display: none !important; }
+
+.invisible {
+    display: block !important;
+    visibility: hidden !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    font-size: 0.1px !important;
+    line-height: 0 !important;
+}
+
+.overflow-auto { overflow: auto; }
+
+.overflow-hidden { overflow: hidden; }
+
+.right { float: right; }
+
+.left {
+    float: left;
+    display: inline; /* ie hack */
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* file-end: stc/voxhtml/base.css 
+----------------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------
+   file-start: stc/voxhtml/default/screen.css 
+*/
+
+
+/*
+    Default Styles
+
+    - Default HTML Elements
+    - Layout Styles
+        - #Advertising
+        - #Header
+        - #Content
+        - #Alpha
+        - #Beta
+        - #Gamma
+        - #Footer
+    - Content Styles
+        - Control-Strip
+        - Main Content (Alpha)
+            - asset-stream
+            - Enclosures
+        - Sidebar Content (Beta & Gamma)
+            - Widgets
+    - Utilities
+*/
+
+
+/* Default HTML Elements ------------------------------------------------------------------- */
+
+html {
+    overflow: auto;
+    overflow-y: scroll; /* always show scrollbar on right */
+}
+
+body {
+    color: #333;
+    background: #fff;
+    font: normal 13px arial, helvetica, sans-serif;
+}
+
+a { text-decoration: underline; }
+
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, fieldset, ul, ol, dl {
+    margin: 0 0 .75em 0;
+}
+
+h1 { font-size: 2em; margin-bottom: .1em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.375em; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1.125em; }
+h6 { font-size: 1em; }
+
+blockquote, ol, ul {
+    margin-left: 20px;
+    background-repeat: repeat-y;
+}
+ol { list-style: decimal outside; }
+ul { list-style: disc outside; }
+.item { list-style: none; }
+
+/* Layout Styles --------------------------------------------------------------------------- */
+
+#container-inner {
+    width: 940px;
+    min-height: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#page,
+#header,
+#content,
+#footer {
+    position: relative;
+    top: 0;
+}
+
+#content {
+    margin-bottom: 10px;
+}
+
+#alpha, #beta, #gamma {
+    display: inline; /*  HACK - Win IE float bug workaround */
+    float: left;
+    position: relative;
+    top: 0;
+}
+
+#footer {
+    margin: -1px 0 0 0; /* HACK - removes space between content and footer */
+}
+
+#page-inner,
+#header-inner,
+#content-inner,
+#alpha-inner, #beta-inner, #gamma-inner,
+#footer-inner {
+    position: static;
+}
+
+#header-inner,
+#alpha-inner,
+#beta-inner,
+#gamma-inner {
+    overflow: hidden; /* hide content that is larger than the element dimensions */
+}
+
+#alpha-inner[id] { overflow: visible; } /* FF MAC & PC will clip pager-top when accessing page anchor */
+
+#header-inner {
+    width: 940px;
+}
+
+/* 2 Column Layouts */
+
+#alpha {
+    width: 750px;
+}
+
+#alpha-inner {
+    margin: 0 20px;
+}
+
+.layout-wt #alpha-inner,
+.layout-tw #alpha-inner{
+    width: 710px;
+}
+.layout-twt #alpha-inner,
+.layout-ttw #alpha-inner {
+    width: 520px;
+}
+
+#beta,
+#gamma {
+    width: 190px;
+}
+
+#beta-inner,
+#gamma-inner {
+    margin: 0;
+}
+
+.layout-tw #alpha {
+    float: right;
+}
+
+/* 3 Column Layouts */
+
+.layout-wtt #alpha,
+.layout-twt #alpha {
+    width: 560px;
+}
+
+.layout-wtt #alpha-inner,
+.layout-twt #alpha-inner {
+    width: 520px;
+}
+
+.layout-twt #alpha,
+.layout-wtt #beta {
+    left: 190px;
+}
+
+.layout-twt #beta {
+    left: -560px;
+}
+
+.layout-wtt #gamma {
+    right: 190px;
+}
+
+
+/* Decoration ----------------------------------------------------------- */
+
+.decor {
+    display: inline;
+    height: 0.1px;
+    font-size: 0.1em;
+    line-height: 0;
+}
+.decor * {
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+
+
+/* #Advertising ---------------------------------------------------------------------------- */
+
+    /* Removed at SVN revision # 25919 */
+
+/* LJSUP-17256 */
+#ya_partner_Ya_sync_0-horizontal .ya-partner {
+    padding: 10px 0 20px;
+}
+.j-p-theme-halloween-bats .ya-context {
+    margin: 0 124px 40px 109px;
+}
+.j-p-theme-halloween-pumpkin .ya-context {
+    margin: 0 50px 0 55px;
+}
+.j-p-theme-scraps-pink .ya-context,
+.j-p-theme-scraps-green .ya-context,
+.j-p-theme-scraps-blue .ya-context,
+.j-p-theme-scraps-yellow .ya-context {
+    margin: 0 15px;
+}
+
+/*Control Strip ----------------------------------------------------------------------------*/
+
+#control-strip {
+    background-color: #404040;
+    color: #fff;
+    font: normal 12px/14px arial, helvetica, sans-serif;
+    text-decoration: none; /* remove? what is this for? */
+    text-transform: none; /* remove? what is this for? */
+}
+
+#control-strip-inner {
+    padding: 2px 0;
+    margin: 0 20px 0 0;
+}
+
+#control-strip a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFF;
+}
+#control-strip a:hover {
+    text-decoration: underline;
+}
+
+.control-strip-left {
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.control-strip-logo {
+    float: left;
+    width: 123px;
+    padding-bottom: 0;
+}
+
+.control-strip-logo a {
+    display: block;
+    background: url(logo.gif?v=1) no-repeat 20px 7px;
+    width: 113px;
+    height: 44px;
+    margin: 0 15px 0 0;
+}
+
+.control-strip-logo span {
+    display: none;
+}
+
+.control-strip-relationship {
+    float: left;
+    margin-top: 10px;
+}
+
+.control-strip-right {
+    float: right;
+    position: relative;
+    margin: 5px 0 0 0;
+}
+
+.control-strip-user-pic {
+    float: left;
+    width: 34px;
+    margin-right: 10px;
+}
+
+#control-strip .control-strip-user-pic img { /* extra selector for IE to apply style */
+    height: 32px;
+    width: 32px;
+    border: 1px solid #FFF;
+}
+
+.control-strip-user-commands {
+    float: left;
+}
+
+.control-strip-greeting {
+    float: left;
+    overflow: hidden;
+    width: 7.5em;
+    height: 1.2em;
+    font-size: 14px;
+    margin-bottom: 1px;
+    white-space: nowrap;
+    padding-bottom: 1px;  /*shows underline in IE6*/
+}
+
+.control-strip-utility-nav {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    text-align: right;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+
+.control-strip-app-commands {
+    float: left;
+    clear: left;
+    width: 460px;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.control-strip-app-commands a {
+    font-weight: normal; /*  */
+    background: url(dotted-vrule.gif?v=1) right top repeat-y;
+    margin-right: 6px;
+    padding-right: 6px;
+}
+
+.control-strip-app-commands a.last {
+    background-image: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.control-strip-sign-in {
+    float: left;
+}
+
+.control-strip-sign-up {
+    float: left;
+    margin-left: 50px;
+}
+
+
+/* Header -------------------------------------------------------------------- */
+
+#header .nav,
+#header-name {
+    margin-bottom: 5px;
+}
+
+/* Connections Header */
+
+#header-description {
+    font-size: 14px;
+}
+
+.connections-view #header-content {
+    position: relative;
+    padding: 10px 0;
+}
+
+.connections-view #header-content-inner {
+    margin: 0 10px 0 15px;
+}
+
+.connections-view #header-text {
+    float: left;
+    margin-left: 7px;
+}
+
+.connections-view #connections-photos {
+    float: left;
+    width: 74px;
+}
+
+.connections-view .connections-photo {
+    float: left;
+    margin: 0 3px 3px 0;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #fff;
+    background: #fff;
+    overflow: hidden; /* hide alt text wider that box */
+}
+
+.connections-view .connections-photo img {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* Main Content (Alpha) -------------------------------------------------------------------- */
+
+/* Nav List ---------------------------------------------- */
+
+.nav {
+    clear: both;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 0 1em 0;
+    padding: 0;
+    list-style: none;
+    font-size: 11px;
+}
+
+.nav .item {
+    display: block;
+    position: relative;
+    float: left;
+    left: -7px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-color: #999;
+    padding: 0 6px;
+    white-space: nowrap;
+}
+
+.nav,
+.nav a { color: #999; }
+
+.nav a:hover {
+    text-decoration: none;
+}
+
+.pager .current a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pager-bottom { margin-bottom: 2.0em; }
+
+.pager-bottom .pager-list {
+    clear: both;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pager .item {
+    border-color: #999;
+    white-space: nowrap;
+}
+
+.pager-bottom .pager-list .item {
+    float: left;
+    display: block;
+    position: relative;
+    left: -4px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    padding: 0 4px;
+}
+
+.pager-top {
+    margin-bottom: .75em;
+}
+
+.pager-top .pager-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 11px;
+}
+
+.pager-top .pager-list .item {
+    float: right;
+    right: -7px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    padding: 0 6px;
+}
+
+.pager-top .pager-list .next {
+    border-right-width: 0;
+    padding-right: 0;
+}
+
+
+
+/* Notes  ----------------------------------*/
+
+.asset-description {
+    margin-bottom: .75em;
+}
+
+.asset-description-hover {
+    background-color: #ffc;
+}
+
+.asset-description-empty {
+    font-style: italic;
+}
+
+/* Titles ----------------------------------*/
+
+.asset-header {
+    position: relative;
+}
+
+.asset-name-hover {
+    background-color: #ffc;
+}
+
+input.asset-name {
+    width: 98%;
+}
+
+/* Title Links */
+.asset-name a:link,
+.asset-name a:visited {
+    text-decoration: none;
+}
+
+.asset-name a:hover {
+    text-decoration: underline;
+}
+
+/* Page Titles */
+.page-header1 {
+    clear: both;
+    margin-bottom: .5em;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.page-header2 {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.page-header3 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.asset-detail .page-header1,
+.asset-favorite-of-user .page-header1 {
+    margin-bottom: 0;
+}
+
+.asset-detail .asset-containers {
+    border: 1px solid #999;
+    margin: 10px 0 20px 0;
+    padding: 10px 10px 0 10px;
+}
+
+
+/* Asset Titles (post stream) */
+.recent-activity-posts .post-asset .asset-name,
+.asset-containers .asset .asset-name,
+.asset-stream-list .post-asset .asset-name {
+    margin-bottom: 0;
+}
+
+/* Asset Titles Media Streams */
+.asset-stream-grid .media-asset .asset-name {
+    height: 1.4em;
+    font-size: 12px;
+    margin: 5px 0 0 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Stream Styles (Library & Collections) -------------------------------------------------------------------------*/
+
+.stream-header {
+    margin-bottom: 20px;;
+}
+.stream-header .page-header1 {
+    margin-bottom: 3px;
+}
+
+/* Space after post asset header connections stream  */
+.connections-asset-stream .post-asset .asset-header { margin-bottom: 5px; }
+
+/* Media Stream Assets */
+.asset-stream-grid .asset {
+    float: left;
+    margin-bottom: 8px;
+}
+
+/* Post Stream Assets */
+.asset-stream-list .post-asset {
+    margin-bottom: 15px;
+}
+
+.asset-stream-grid .asset-inner {
+    display: inline;
+    float: left;
+    overflow: hidden;
+    height: 100%;
+    width: 125px;
+    margin: 0 5px 5px 0;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.asset-stream-list .asset-inner {
+    background: transparent;
+    float: none;
+    width: 100%;
+    overflow: visible;
+    text-align: left;
+    vertical-align: top;
+    padding: 0;
+}
+
+/* Align images center & bottom */
+.asset-stream-grid .asset .asset-image {
+/* Win IE */
+    display: inline;
+/* rule for CSS 2.x browsers */
+    display: table-cell;
+    vertical-align: bottom;
+    overflow: hidden;
+    height: 122px;
+    width: 122px;
+    margin: 0;
+    text-align: center;
+    font-size: 132px; /* Win IE hack inspired by http://mrclay.org/web_design/centered_image/ */
+}
+#page .asset-image[class] { font-size: 10px; } /* unhack above font-size */
+
+.asset-stream-grid .asset-image img {
+    border: 1px solid #999;
+}
+
+/* Asset Meta ------------------------------- */
+
+.asset-header {
+    margin-bottom: 10px;
+}
+
+.asset-meta { margin: 0 0 .75em; }
+
+.asset-meta-list,
+.asset-meta-list a {
+    color: #999;
+    font-weight: normal;
+}
+
+.asset-meta-list {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    list-style: none;
+    font-size: 10px;
+}
+
+.asset-meta-list .item {
+    display: block;
+    position: relative;
+    float: left;
+    left: -4px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    padding: 0 4px;
+    white-space: nowrap;
+    border-color: #999;
+}
+
+.asset-meta-list .item a,
+.asset-meta-list .item span {
+    line-height: 1.5;
+    display: inline-block; /* win-ie - displays correctly */
+    padding: 1px 0 1px 15px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+.asset-meta-list .asset-meta-repost {
+    clear: right;
+}
+
+.asset-meta-list .asset-meta-datetime-issued span {
+    padding-left: 0;
+}
+.asset-meta-list .no-comments a {
+    background-image: none;
+    padding-left: 0;
+}
+
+.asset-meta-datetime-issued {
+    width: 100%;
+}
+.profile .asset-meta-datetime-issued,
+.asset-detail .asset-meta-datetime-issued,
+.asset-favorite-of-user .asset-meta-datetime-issued {
+    width: auto;
+}
+
+.asset-meta-privacy span {
+    background-image: url(icon-privacy.gif?v=1);
+}
+
+.asset-privacy-hover {
+    background-color: #ffc;
+}
+
+.asset-meta-privacy select,
+.asset-meta-privacy input {
+    font-size: 10px;
+    font: inherit;
+    vertical-align: middle;
+}
+
+.asset-meta-favorite a.is-a-favorite {
+    background-image: url(icon-favorite-on.gif?v=1);
+}
+
+.asset-meta-favorite a.favorite-count {
+    background-image: none;
+    padding-left: 0;
+}
+
+.asset-meta-edit a {
+    background-image: url(icon-edit.gif?v=1);
+}
+
+.asset-meta-delete a {
+    background-image: url(icon-delete.gif?v=1);
+}
+
+.asset-meta-favorite a.favorite-function {
+    background-image: url(icon-favorite.gif?v=1);
+}
+
+.asset-meta-favorite a.is-a-favorite {
+    background-image: url(icon-favorite-on.gif?v=1);
+}
+
+.favorite-phrase {
+    padding-left: 19px;
+    background: url(icon-favorite.gif?v=1) no-repeat;
+}
+
+.offensive-phrase {
+    padding-left: 19px;
+    background: url(icon-flag.gif?v=1) no-repeat;
+}
+
+.asset-source {
+    padding-left: 19px;
+    background-repeat: no-repeat;
+}
+
+.photo-asset .asset-source {
+    background-image: url(icon-photo.gif?v=1);
+}
+
+.book-asset .asset-source {
+    background-image: url(icon-book.gif?v=1);
+}
+
+.audio-asset .asset-source {
+    background-image: url(icon-audio.gif?v=1);
+}
+
+.video-asset .asset-source {
+    background-image: url(icon-video.gif?v=1);
+}
+
+
+/* Asset Meta for Media Streams */
+.asset-stream-grid .asset-meta .member-name,
+.asset-stream-grid .asset-meta .asset-meta-comments {
+    height: 1.4em;
+    font-size: 10px;
+    overflow: hidden;
+    margin: 0 0 5px 0;
+}
+
+/* .asset-meta-comments a {
+    background: url(icon-comment.gif?v=1) left center no-repeat;
+    padding-left: 15px;
+} */
+.asset-meta .no-comments a {
+    background: none !important; /* used to override all comment backgrounds */
+    padding-left: 0;
+}
+
+
+/* Stream Footer -------------------------------------------------------------------------- */
+.stream-footer { clear: both; }
+
+.tag-search { margin-bottom: .75em; }
+
+/* Asset Detail Styles -------------------------------------------------------------------------- */
+
+.asset-header {
+    overflow: hidden;
+    width: 100%;
+}
+
+.asset-detail .asset {
+    margin-bottom: 15px;
+}
+
+.asset-subtitle {
+    margin: 0;
+}
+
+.asset-body {
+    margin: 0 5px .75em 0;
+}
+
+.asset-detail .asset-body {
+    overflow: hidden; /* prevent extra-large content from expanding beyone the post asset-body */
+    width: 100%;
+    margin: 0 0 .75em 0;
+}
+
+/* Asset Body line-height */
+.post-asset .asset-body { line-height: 1.4; }
+.enclosure .enclosure-inner {
+    line-height: 1.2;  /* reset enclosure */
+    border: 1px solid #999;
+}
+
+/* List Padding in Posts */
+.post-asset .asset-body ul,
+.post-asset .asset-body ol {
+    padding-left: 20px;
+}
+
+.asset-body blockquote {
+    font-size: 12px;
+}
+
+.asset-detail .media-asset img {
+    border: 1px solid #999; /* playable video not affected due to no IMG tag */
+}
+
+/* Asset Tags -----------------------------*/
+
+.asset-tags {
+    margin-bottom: .75em;
+}
+
+.asset-tags-header {
+    display: block;
+    float: left;
+    padding: 0;
+}
+
+.asset-tags-list {
+    padding: 0;
+}
+
+.asset-tags-list .item {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.asset-tags-list a {
+    white-space: nowrap;
+    padding: 0 1px;
+}
+
+.asset-tags-list a:hover {
+    color: #fff;
+    background-color: #2299b4;
+    text-decoration: none;
+}
+
+.asset-tags-list .asset-tags-add-tags {
+    display: inline-block;
+    background: url(icon-add.gif?v=1) left center no-repeat;
+    padding-left: 15px;
+    cursor: pointer;
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    vertical-align: bottom; /*safari*/
+}
+
+.asset-tags-list .asset-tags-add-tags:link {
+    color: #999;
+}
+
+.asset-tags-list .asset-tags-add-tags:hover {
+    color: #999;
+    background-color: #ffc;
+}
+
+.asset-tags-editing a.asset-tags-add-tags {
+    display: none;
+}
+
+.asset-tags-editing .edit-asset-tags-form {
+    display: inline;
+    float: left;
+    margin: .75em 0;
+}
+
+.edit-asset-tags-form button,
+.edit-asset-tags-form input {
+    font-size: 10px;
+}
+
+.edit-asset-tags-form input.text {
+    width: 300px;
+    margin-left: 40px;
+}
+
+.edit-asset-tags-form .help-text {
+    font-size: 10px;
+    margin-left: 40px;
+}
+
+
+/* Comments ---------------------------------------*/
+
+.comment-inner  {
+    margin: 10px;
+    font-size: 12px;
+}
+
+.commenter-name {
+    font-weight: bold;
+}
+
+.comment-date {
+    font-size: 10px;
+}
+
+.comment-even,
+.comment-odd {
+    margin-bottom: 20px;
+}
+
+.comment-even {
+    border: 1px solid #999;
+}
+
+.comment-props {
+    float: left;
+    font-weight: bold;
+    margin-right: 0.25em;
+}
+
+/* Comment Form ---------------------------------------*/
+
+#comment-form {
+    width: 710px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #999;
+}
+
+.comment-error {
+    border: 1px solid #999;
+    background: url(comment-error-gradient.gif?v=1) 0 0 repeat-x #c0c1c0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.comment-error p {
+    margin: 0;
+    background: url(icon-error.gif?v=1) no-repeat 5px 50% transparent;
+    padding: 2px 2px 2px 24px;
+    color: #c00;
+    font-weight: bold;
+}
+
+.comment-form-props {
+    font-weight: bold;
+}
+
+.comment-form-input label {
+    display: none;
+}
+
+.comment-form-toolbar {
+    border: 1px solid #999;
+    border-bottom-width: 0;
+    padding: 5px;
+    background: #fff;
+}
+
+.comment-form-input {
+    border: 1px solid #999;
+    height: 150px;
+    margin-bottom: 5px;
+}
+
+.comment-form-input textarea,
+.comment-form-input iframe {
+    border-width: 0;
+}
+
+.comment-form-footer {
+    text-align: right;
+}
+
+.comment-form-submit-button {
+    border: 1px solid #999;
+    color: #000;
+    background: #fff url(bg-button.gif?v=1) repeat-x bottom left;
+}
+
+
+/* Forms -------------------------------------------------------------------------------- */
+
+.search-box { display: inline; }
+
+.search-box input {
+    border: 1px solid #999;
+    font-size: 12px;
+}
+
+/* Asset Modules -------------------------------------------------------------------------------- */
+
+/* Member Pics -----------------------------*/
+.recent-activity-comments .user-pic,
+.asset-favorites .user-pic,
+.connections-asset-stream .post-asset .user-pic,
+.widget .user-pic {
+    float: left;
+    margin-right: 5px;
+    padding: 1px;
+}
+.connections-asset-stream .post-asset .user-pic {
+    float: left;
+    width: 52px;
+    height: 52px;
+}
+
+.user-pic a img,
+.user-pic img {
+    margin: 0;
+    border: 1px solid #999;
+    padding: 0;
+}
+
+.connections-asset-stream .post-asset .asset-header-content {
+    position: relative; /* Necessary for IE rendering */
+    margin-left: 60px;
+}
+
+.connections-asset-stream .user-pic img {
+    background: #f7f7f7;
+    text-align: center;
+}
+
+#comments .user-pic {
+    display: inline;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#comments .user-pic img {
+    width: 32px;
+    height: 32px;
+}
+
+/* Rating ---------------------------------------*/
+.asset-rating {
+    margin-bottom: .75em;
+}
+
+.asset-rating-header {
+    display: block;
+    float: left;
+    margin: 0;
+    padding-right: 4px;
+}
+
+.asset-rating .item {
+    padding: 0 2px;
+    margin-bottom: 0;
+}
+
+/* Rating Module -----------------------------*/
+.rating {
+    overflow: hidden;
+    display: inline;
+    background-image: url(rating.png?v=1);
+    background-repeat: no-repeat;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.updating {
+    position: relative;
+    left: -60px;
+    display: none;
+}
+
+.asset-rating .rating-hover {
+    background-image: url(rating-hover.png?v=1);
+}
+
+.rating-0 { background-position: 0 0; }
+.rating-1 { background-position: 0 -40px; }
+.rating-2 { background-position: 0 -80px; }
+.rating-3 { background-position: 0 -120px; }
+.rating-4 { background-position: 0 -160px; }
+.rating-5 { background-position: 0 -200px; }
+
+.rating span {
+    display: none;
+}
+
+.rating a {
+    display: inline-block;
+    padding-right: 17px;
+    height: 1.4em;
+    vertical-align: text-top; /* HACK - aligns rating graphic top in Safari */
+}
+
+.rating-updating {
+    background-image: none !important;
+}
+
+.rating-updating .updating {
+    display: inline;
+}
+
+
+/* Enclosures ------------------------------------------------------------------------------ */
+.enclosure {
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+/* set enclosure-inner defaults */
+.enclosure-inner {
+    padding: 10px;
+    text-align: center;
+}
+
+/* enclosure alignment */
+.enclosure-left { float: left; margin-right: 30px; }
+.enclosure-right { float: right; margin-left: 30px; }
+.enclosure-center { clear: both; }
+
+.enclosure-center .enclosure-inner {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* enclosure formats */
+.enclosure-large .enclosure-inner { width: 320px; }
+.enclosure-medium .enclosure-inner { width: 200px; }
+.enclosure-small .enclosure-inner,
+.enclosure-strip-vertical .enclosure-inner,
+.enclosure-strip-vertical .enclosure-inner { width: 120px; }
+
+/* enclosure list */
+.enclosure-list .enclosure-item {
+    margin-bottom: 10px;
+}
+.enclosure-list .last { margin-bottom: 0; }
+
+.enclosure-asset-name {
+    margin-top: .5em; /* margin-top for space from image */
+    margin-bottom: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.enclosure-meta {
+    margin-bottom: 0; /* override default DL behavior */
+    font-size: 10px;
+}
+
+.enclosure .enclosure-inner .enclosure-list {
+    margin: 0;
+    padding: 0;
+}
+
+.enclosure .enclosure-item { list-style: none; }
+
+.enclosure-strip-horizontal .enclosure-item {
+    float: left;
+    margin-right: 9px;
+    width: 120px;
+}
+.enclosure-strip-horizontal .media-asset .enclosure-image {
+    display: inline;  /* Win IE */
+    font-size: 132px;  /* Win IE hack inspired by http://mrclay.org/web_design/centered_image/ */
+    display: table-cell;  /* rule for CSS 2.x browsers */
+    vertical-align: bottom;
+    overflow: hidden;
+    height: 120px;
+    width: 122px;
+    margin: 0;
+    text-align: center;
+}
+#page .enclosure-image[class] { font-size: 10px; } /* unhack above font-size */
+
+.enclosure-strip-horizontal .enclosure-asset-name {
+    margin-bottom: 3px;
+}
+
+.enclosure-strip-horizontal .enclosure-meta {
+    height: 3.6em;
+    overflow: hidden;
+}
+
+.enclosure-comments a {
+    display: inline-block; /* win-ie - displays correctly */
+    padding-left: 15px;
+    background-image: url(icon-comment.gif?v=1);
+    background-position: left center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+/* override custom bullets in enclosures */
+.asset-body .enclosure ul li { list-style-image: none; }
+
+/*shows it's playable*/
+.asset-overlay {
+    background: url(icon-play.gif?v=1) 4px 4px no-repeat transparent;
+    z-index: 50;
+    display:  block;
+    position: absolute;
+    width: 23px;
+    height: 22px;
+}
+
+.collection-asset .asset-overlay {
+    background-image: url(icon-collection-overlay.gif?v=1);
+}
+
+/* Page Specific --------------------------------------------------------------------------- */
+
+/* Tag Cloud ------------------------------- */
+#tagcloud .tagcloud {
+    font-size: 13px; /* set default font-size */
+}
+
+
+/* comment posted page ------------------------------------------------------------------ */
+
+#comment-posted .page-header2 {
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+}
+
+#comment-posted #beta-inner {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* profile page ------------------------------------------------------------------ */
+
+.profile-content .user-pic {
+    float: left;
+    margin: 0 10px 10px 0;
+    padding: 0;
+}
+
+.profile-stats {
+    margin-bottom: 10px;
+}
+
+.profile-stats .profile-list {
+    margin: 0;
+    line-height: 1.4;
+}
+.profile-name {
+    font-weight: bold;
+}
+
+.profile-bio {
+    line-height: 1.4;
+    margin-bottom: 0.75em;
+}
+
+#profile .page-header2 {
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+}
+
+.user-interests-list {
+    margin: 0;
+}
+
+.user-interests-list .item {
+    display: inline;
+    padding-right: 3px;
+}
+
+.recent-activity-media {
+    margin-bottom: 0.75em;
+}
+
+.recent-activity-media .media-asset {
+    float: left;
+    width: 78px;
+    height: 78px;
+    margin: 0 10px 0 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.recent-activity-media .media-asset img {
+    border: 1px solid #999;
+}
+
+.recent-activity-media .media-asset .asset-name {
+    display: none;
+}
+
+.recent-activity-posts {
+    clear: both;
+    margin-bottom: 0.75em;
+}
+
+.asset-containers-wrapper {
+    clear: both;
+    margin-bottom: 2em;
+}
+
+.recent-activity-posts .post-asset,
+.asset-containers .post-asset,
+.asset-containers .collection-asset {
+    margin-bottom: 1em;
+    background: url(icon-post.gif?v=1) 0 1px no-repeat;
+    padding-left: 18px;
+}
+
+.asset-containers .collection-asset {
+    background-image: url(icon-collection.gif?v=1);
+}
+
+/* recent comments widget and profile page */
+.comment-asset {
+    margin-bottom: 1em;
+    display: inline-block;
+}
+
+.comment-asset .user-pic {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.comment-asset .user-pic img {
+    width: 32px;
+    height: 32px;
+}
+
+.comment-asset .comment-body { margin-left: 42px; }
+
+/* webkit div > br hack */
+.comment-body div br {
+    display: block;
+    height: 0.1px;
+    margin-bottom: 0.75em;
+}
+
+/* Connections Page ------------------------------------------------------------------ */
+
+.connections-list { margin: 0; } /* override list defaults */
+
+.connections-list .item {
+    float: left;
+    width: 52px;
+    text-align: center;
+    overflow: hidden; /* hide more than one line of screen name */
+    margin: 0 10px 10px 0;
+}
+
+.connections-list .user-pic {
+    display: block; /* anchor html element */
+    height: 50px;
+    width: 50px;
+}
+
+.connections-list .contact-name {
+    display: block; /* anchor html element */
+    margin-top: .25em;
+    white-space: nowrap;
+    font-size: 11px;
+}
+
+/* Recent Activity page ------------------------------------------------------------------ */
+.watched-asset {
+    margin-bottom: 30px;
+}
+
+.watched-asset-header {
+    margin-bottom: 10px;
+}
+
+.watched-asset .user-pic {
+    float: left;
+    margin-right: 10px;
+}
+
+.watched-asset-activity {
+    clear: both;
+}
+
+.watched-asset .comment-inner {
+    margin: 0;
+}
+
+.watched-asset .comment-meta {
+    margin-bottom: 5px;
+}
+
+.watched-asset .comment-body {
+    margin-bottom: 1em;
+}
+
+.watched-asset-header-content {
+    float: left;
+    margin-left: 10px;
+    width: 466px;
+}
+
+.watched-asset-activity-list {
+    margin-left: 35px;
+}
+
+.watched-asset-activity-item {
+    padding-left: 25px;
+    background: url(icon-comment.gif?v=1) no-repeat 0 10px;
+}
+
+.watched-asset .page-header2 {
+    margin: 0;
+}
+
+.watched-asset-activity .user-pic img {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* Asset Favorite of Users ----------------------------------------------------------- */
+
+.asset-favorites-users-list {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.asset-favorites-users-list li {
+    margin-bottom: .75em;
+}
+
+#asset-favorite-of-user a.view-user-favorites-link {
+    font-weight: normal;
+}
+
+.favorite-of-user .user-pic img {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* Sidebar Content (Beta, Gamma) ----------------------------------------------------------- */
+
+/* Widget Defaults -------------------------------*/
+
+.widget {
+    margin-bottom: 15px;
+    overflow: hidden;
+    width: 100%;
+    font-size: 11px;
+    line-height: 1.2;
+}
+
+.widget-header {
+    font-size: 14px;
+}
+
+.widget-header .edit a {
+    border-left: 1px solid #999;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 0 0.3em 0 0.4em;
+    margin: 0 0.6em 0 0.4em;
+}
+
+.widget-header a:hover,
+.widget-header .edit a:hover {
+    text-decoration: underline;
+}
+
+.widget-content {
+    margin-bottom: 10px;
+}
+
+.widget-list { margin-left: 0; } /* Remove default list margin */
+
+.widget-list .item  {
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.widget-footer {
+    clear: both;
+    text-align: center;
+    font-size: 11px;
+}
+
+.widget-footer p {
+    margin-bottom:  0;
+}
+
+/* Tag Cloud -------------------------------*/
+
+/* Tagcloud List Items (page & widget) */
+.tagcloud .tag {
+    display: inline;
+    margin-right: 5px;
+}
+
+/* Tagcloud Tag Sizes (page & widget) */
+.tag-weight-1  { font-size: 0.85em; }
+.tag-weight-1  { font-size: 0.9em; }
+.tag-weight-2  { font-size: 0.95em; }
+.tag-weight-3  { font-size: 1em; }
+.tag-weight-4  { font-size: 1.125em; }
+.tag-weight-5  { font-size: 1.25em; }
+.tag-weight-6  { font-size: 1.375em; }
+.tag-weight-7  { font-size: 1.5em; }
+.tag-weight-8  { font-size: 1.625em; }
+.tag-weight-9  { font-size: 1.75em; }
+.tag-weight-10 { font-size: 1.75em; }
+
+
+/* Widgets -------------------------------*/
+.archive-widget {
+    margin-bottom: 6px;
+}
+
+.archive-widget .widget-list { margin-left: 15px; }
+
+.archive-widget .widget-list .item {
+     list-style: disc;
+     font-weight: normal; /* xxx this shows numbers on bloom*/
+}
+
+.archive-widget .widget-list .item a { font-weight: bold; }
+
+.connections-widget .widget-list,
+.recent-comments-stream-widget .widget-list {
+    padding: 0;
+    margin: 0;
+}
+
+.connections-widget .item,
+.recent-comments-stream-widget .item {
+    width: 100%;
+    display: block;
+    margin-bottom: 8px;
+    padding: 1px 0 0;
+}
+
+.recent-comments-stream-widget {
+    margin-bottom: -6px;
+}
+
+.recent-comments-stream-widget .item {
+    margin-bottom: 5px;
+}
+
+.connections-widget .user-pic,
+.recent-comments-stream-widget .item .user-pic {
+    margin: 0;
+    padding: 0;
+}
+
+.connections-widget .user-pic {
+    margin-right: 8px;
+}
+
+.recent-comments-stream-widget .comment-asset .comment-body {
+    overflow: hidden;
+    width: 113px;
+    margin: 0;
+    padding: 0;
+}
+
+.connections-widget .user-pic a,
+.recent-comments-stream-widget .item .user-pic a {
+    display: block;
+}
+
+.connections-widget .user-pic img,
+.recent-comments-stream-widget .user-pic img {
+    width: 32px;
+    height: 32px;
+}
+
+.connections-widget .contact-info {
+    width: 115px;
+    overflow: hidden;
+}
+
+.connections-widget .contact-update-datetime {
+    font-size: 10px;
+}
+
+/* About Me & Contact Me Widget ---------------------------------------------------- */
+.about-me-widget {
+    margin-bottom: 3px;
+}
+
+.widget-list .email {
+    padding-left: 15px;
+    line-height: 1.25em;
+    margin-bottom: 5px;
+    background: url(icon-email.gif?v=1) left center no-repeat;
+}
+
+.about-me-widget .about-me-minibio {
+    clear: both;
+    padding-top: 5px;
+    margin-bottom: .75em;
+}
+
+.about-me-name,
+.about-me-location {
+    font-weight: bold;
+}
+
+/* Contact Me Widget -------------------------------------------------------------- */
+
+.contact-me-list .item-title { display: none; } /* hide IM service names */
+
+.contact-me-list .contact-email,
+.contact-me-list .contact-aim,
+.contact-me-list .contact-yim,
+.contact-me-list .contact-skype,
+.contact-me-list .contact-msn,
+.contact-me-list .contact-googletalk {
+    margin: 0 0 5px 0;
+    padding: 0 0 2px 20px;
+    background-repeat: no-repeat; /* status icons background-image specified inline in contact_details.tt */
+    background-position: left center;
+}
+
+.contact-me-list .contact-email { background-image: url(icon-email.gif?v=1); }
+
+.contact-me-list .contact-msn { background-image: url(icon-msn.gif?v=1); }
+
+.contact-me-list .contact-googletalk { background-image: url(icon-googletalk.gif?v=1); }
+
+.widget .asset img {
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 0;
+}
+
+.widget .asset-image img,
+.widget .user-pic a img,
+.widget .user-pic img {
+    border: 1px solid #999;
+}
+
+.widget-content,
+.widget-header {
+    padding: 0 15px;
+}
+
+.media-stream-widget .widget-content {
+    margin-top: 0;
+    margin-left: 15px;
+    padding: 0;
+}
+
+.media-stream-widget .widget-list .item {
+/* Win IE */
+    display: inline;
+/* rule for modern browsers */
+    display: table-cell;
+    overflow: hidden;
+    width: 77px;
+    float: left;
+    clear: none;
+    margin: 0 6px 5px 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.media-stream-widget .asset-image {
+    height: 81px;
+    width: 77px !important;
+    display: block;
+}
+
+.connections-asset-stream .media-stream-widget .asset-owner {
+    display: block;
+    height: 1.2em;
+    width: 77px;
+    overflow: hidden;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 10px;
+}
+
+/* icons on list items */
+.subscribe-widget {
+    margin-bottom: 4px;
+}
+
+.subscribe-widget .item {
+    min-height: 15px;
+    margin: 0;
+    padding-left: 18px;
+    background: url(icon-feed.gif?v=1) 2px 0 no-repeat;
+}
+
+/* collection widget ------------------------------------------------- */
+.collection-stream-widget .widget-list {
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.collection-stream-widget .widget-list .item {
+    list-style-image: none;
+    margin: 0;
+    padding: 0 0 1px; /* 1px for spacing issues w/ IE */
+}
+.collection-stream-widget .widget-list .item a {
+    display: block;
+    background: url(icon-collection.gif?v=1) 0 0 no-repeat;
+    padding: 0 0 10px 20px;
+}
+
+.collection-stream-widget {
+    margin-bottom: -3px;
+}
+
+/* ads widget ------------------------------------------------- */
+.ads-widget .widget-header {
+    display: none;
+}
+
+/*html>body .collection-stream-widget .widget-list .item a { width: auto; }*/
+
+/* Error Pages ----------------------------------------------------------- */
+#error {
+  text-align: center;
+}
+#error-message {
+  width: 780px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: left;
+}
+
+/* AJAX Styles ------------------------------------------------------------------------------- */
+
+#modal-mask,
+#modal-mask div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/spacer.gif?v=1); /* to get clicks in ie */
+}
+
+#modal-mask iframe {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+/* Ads ------------------------------------------------------------------------------------- */
+
+.ad-iframe {
+    overflow: hidden;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background: transparent;
+}
+
+/* START - control-strip-ad css is specific to house ad */
+    #control-strip-ad {
+        background: #fff;
+        text-align: center;
+        height: 1%;
+    }
+
+    #control-strip-ad-inner {
+        background: #fff;
+        width: 940px;
+        margin: 0 auto;
+        padding: 5px 0;
+        text-align: center;
+    }
+/* END */
+
+.house-ad {
+    margin: 3em 0;
+    border: 1px solid #ddd;
+    padding: 4px;
+    background: #fff;
+    text-align: center;
+}
+
+.ribbon-ad a {
+    display: block;
+}
+
+#footer-ad {
+    text-align: center;
+    height: 1%;
+    width: 940px;
+    background-color: #fff; /*xxx remove this later when we can change background*/
+}
+
+#footer-ad-inner {
+    width: 728px;
+    margin: 0 auto;
+    padding: 5px 0;
+    text-align: left;
+}
+
+.box-vertical2 {
+    padding: 0 15px;
+}
+
+/* Supprt ------------------------------------------------------------------------------- */
+
+.support {
+    margin-bottom: .75em;
+    border: 1px solid #F00;
+    padding: .75em .75em 0;
+    background: #fdd;
+    color: #000;
+}
+
+.support a {
+    color: blue;
+}
+
+.support h3 {
+    clear: both;
+    font-weight: bold;
+    margin: .25em 0;
+}
+
+.support .offensive-phrase {
+    background: url(icon-flag.gif?v=1) no-repeat !important;
+}
+
+.support .support-user-info {
+    margin: 0 0 .75em 1em;
+}
+
+.support .support-user-info dt {
+    float: left;
+    clear: left;
+    font-weight: bold;
+    margin: 0 5px 5px 0;
+}
+
+.support .support-user-info dd {
+    margin: 0 5px 5px 0;
+}
+
+/* Utilities ------------------------------------------------------------------------------- */
+
+/* Clear floats - inspired by <positioniseverything.net/easyclearing.html> Now with more ydnar! */
+#control-strip-inner:after,
+#content-inner:after,
+#alpha:after,
+#beta:after,
+#gamma:after,
+#delta:after,
+#header-content:after,
+#header-content-inner:after,
+.asset-tags:after,
+.nav-wrapper:after,
+.asset-header:after,
+.asset-inner:after,
+.asset-body:after,
+.library:after,
+.pager-inner:after,
+.recent-activity-media:after,
+.comments-inner:after,
+.enclosure-inner:after,
+.widget-list .asset:after,
+.watched-asset-header:after,
+.watched-asset-list-header:after,
+.profile-content:after,
+.comment-meta:after,
+.comment-asset:after,
+.post-header-list:after,
+.asset-rating:after,
+.widget .user-pic:after,
+.support-inner:after {
+    content: " ";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0.1px;
+    font-size: 0.1em;
+    line-height: 0;
+}
+
+/* Holly Hack */
+#control-strip-inner,
+#alpha,
+#beta,
+#gamma,
+.pager,
+.comment-body,
+.watched-asset-header,
+.watched-asset-list-header,
+.recent-activity-media,
+.profile-content,
+#header-content,
+#header-content-inner,
+.enclosure-inner,
+.asset-tags,
+.comment-form-toolbar,
+.support-inner {
+    height: 1%;
+}
+
+/* LJSUP-13769 */
+.appwidget-journalpromo {
+    margin: 0 auto 0.75em;
+    }
+/* Resize images -------------------------------------------------------------- */
+.j-p-resize-all-images .asset-body IMG:not(.i-ljpoll-results-bar),
+.j-p-resize-images-without-sizes .asset-body IMG:not([width]):not([height]) {
+    height: auto;
+    max-width: 100%;
+    }
+
+
+/* file-end: stc/voxhtml/default/screen.css 
+----------------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------
+   file-start: stc/voxhtml/ljextras.css 
+*/
+
+/* CSS Document */
+
+
+/* ----- Stuff that exists in default stylesheet that has been modified ----- */
+
+a img, :link img, :visited img { border: none; }
+
+/* Asset Meta ------------------------------- */
+.asset-meta-edit a {
+    background-image: url(icon-edit.gif?v=1);
+}
+
+.asset-meta-list {
+    font-size: 12px;
+}
+
+.asset-meta-comments a,
+.asset-meta-no-comments a,
+.asset-meta-repost .asset-meta-repost-inner {
+        background-image: none !important;
+        padding-left: 2px !important;
+}
+.asset-meta-repost .asset-meta-repost-inner IMG {
+    vertical-align: middle !important;
+    }
+
+.asset-nav, .nav {
+    clear: both; 
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 0 1em 0;
+    padding: 0;
+    list-style: none;
+}
+
+.asset-nav .item {
+    position: relative;
+    left: -7px;
+    display: block;
+    float: left;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-color: #999;
+    padding: 0 6px;
+    white-space: nowrap;
+}
+
+/* Member Pics -----------------------------*/
+#comments .user-pic img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Widget Defaults -------------------------------*/
+.widget {
+    margin-bottom: 10px;
+}
+
+.widget-list .item,
+.categories-widget .widget-list .item,
+.archive-widget .widget-list .widget-content .item {
+    width: 99% !important;
+    border-left: 0 !important;
+    white-space: normal !important;
+}
+
+.widget-content .asset-name-hover {padding:2px;}
+
+/* archive widget - Page Summary in LJ ----------------*/
+.archive-widget .widget-list .item {
+    margin-bottom: .2em;
+}
+
+/* prev/next */
+.prevnext {
+        padding-top: 5px;
+        padding-bottom: 5px;
+}
+
+.prev {
+        padding-top: 5px;
+        padding-bottom: 5px;
+}
+
+.next {
+        padding-top: 5px;
+        padding-bottom: 5px;
+}
+
+/* tags ---------------------------------------*/
+.asset-tags-header {
+     height: 100% !important;
+     font-size: 12px !important;
+}
+
+.widget-list .tagcloud {
+        list-style: none !important;
+        display: inline !important;
+        white-space: nowrap !important;
+        border-left: 0 !important;
+        width: 100% !important;
+}
+
+.asset-tags-list a {
+        white-space: normal !important;
+}
+
+/* Comments ---------------------------------------*/
+.commenter-name {
+    font-size: 12px;
+}
+
+
+/* header photo ---------------------------------------*/
+
+#header-photo-inner, #header-photo { 
+    width: 0px !important; 
+    border: none !important;
+}
+
+
+/* ----- Stuff that is not in the default stylesheet that has been created for LJ ----- */
+
+
+/* userpic in individual entry -----------------------------*/
+.user-icon {
+    float: left;
+    margin-right: 5px;
+    padding: 1px;
+    font-size: 10px;
+}
+
+
+/* My-Currents (mood, music, location) -----------------------------*/
+.lj-currents ul li {
+        list-style: none;
+    margin-left: -19px;
+}
+.ljuser {
+        display: inline !important;
+}
+.entryMetadata-label {
+        font-weight:bold;
+}
+.entryMetadata-content {
+    margin-left: 2px;
+}
+
+
+/* Links List in sidebar ---------------------------*/
+.links-widget .widget-list  .item{
+    margin-bottom: .2em;
+    border: none !important;
+}
+
+
+/* Comments ---------------------------------------*/
+.comments-nav { 
+        text-align:center; 
+        margin:20px; 
+}
+.comment-links {  /* --- reply, freeze, screen, etc ---  */
+        font-weight:normal; 
+        text-align:right; 
+        font-size: .95em; 
+}  
+.comment-subject {
+        font-weight:bold; 
+}
+
+/* Fix height in IE */
+.comment {
+    height: 1%;
+}
+
+/* Quick Reply  ---------------------------------------*/
+.quickreply {
+        margin-top: 1em;
+        width:90%;
+        padding-top: 5px;
+        padding-bottom: 10px;
+}
+
+
+#commenttext, #subject {
+     width: 90%;
+
+}
+
+
+/* Calendar/Archive ---------------------------------------------------------------------- */
+
+        
+        ul.year {
+                text-align: center;
+                }
+        
+        ul.year li {
+                display: inline;                
+                }
+        
+        table.yeartable {
+                margin-left: auto;
+                margin-right: auto;
+                }
+        
+        table.yeartable td.yeardate, table.yeartable td.yearday {
+                border-width: 1px;
+                border-style: solid;
+                border-color: #000;
+                }
+        
+        table.yeartable td.yearday {
+                text-align: center;
+                }
+        
+        td.yearmonth {
+                border-style: none;
+                font-weight:bold;
+                }
+        
+        dd.viewsubjects {
+    margin: 0 0 .75em .75em;
+}
+
+
+
+/* Sponsored Plus ---------------------------------------*/
+
+#ad-5linkunit {
+    clear: both;
+}
+
+#ad-leaderboard {
+        margin-bottom: 10px;
+}
+
+
+/* Fix subject backgrounds in some themes so they don't go outside the boundaries of the theme */
+.asset-header {
+    width: auto;
+}
+
+
+/* Holly hack -----------------------------------------*/
+#content-inner, .asset-body {
+    height: 1%;
+}
+
+
+/* file-end: stc/voxhtml/ljextras.css 
+----------------------------------------------------------------------------------*/

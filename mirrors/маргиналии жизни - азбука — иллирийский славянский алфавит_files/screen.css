@@ -1,0 +1,487 @@
+/* ---------------------------------------------------------------------------------
+   file-start: stc/voxhtml/minimalist-white/screen.css 
+*/
+
+/*
+    Theme: 
+    Creator: 
+    URL: 
+*/
+/* Global ----------------------------------------------------------- */
+body {  
+    font-family: trebuchet ms;   
+    background-color: #fff; 
+    color: #333;
+} 
+
+a {
+    color: #000; 
+}
+
+a:hover {
+    text-decoration: none;
+}
+/* Control Strip ---------------------------------------------------- */
+#control-strip {
+    background-color: #666;
+}  
+.control-strip-logo a {
+    background-image: url(logo.gif?v=1);
+}
+/* Layout ----------------------------------------------------------- */
+#page {
+    background-color: #fff;
+} 
+#container-inner,
+#page,
+#header,
+#footer {
+    position: relative;
+    width: 100%;
+}
+
+#control-strip,
+#footer {
+    width: 100%;
+    position: relative;
+    text-align: left;
+}
+
+#control-strip-inner {
+    width: 900px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.control-strip-right {
+    margin-right: 20px;
+    display: inline;
+}
+
+#page,
+#header-inner,
+#content,
+#footer-inner {
+    position: relative;
+    text-align: left;
+    margin: 0 auto;
+}  
+#content { 
+    margin-top: 20px;  
+    margin-bottom: 30px; 
+} 
+
+#content,
+#footer-inner {
+    width: 940px;
+}
+
+#footer-ad {
+        width: 100%;
+}
+
+#header {
+    display: block;
+    position: relative;
+    text-align: left;
+}
+
+#header-inner {
+    position: relative;
+}
+
+#header-content {
+    width: 940px;
+}
+/* Header ----------------------------------------------------------- */
+#header { 
+    background: #eee url(header.gif?v=1) repeat-x bottom right; 
+    padding: 0; 
+    border-bottom: 1px solid #fff;    
+} 
+
+#header-content,
+.connections-view #header-content {
+    margin: 30px 0 40px 20px;
+}
+
+#header-photo {
+    float: left;  
+    width: 56px; 
+}
+
+#header-photo-inner {
+    border: 3px solid #333; 
+
+} 
+#header-text {
+    width: 832px;
+    margin: 0 0 0 10px;
+    float: left; 
+}
+
+#header a {
+    font-weight: normal;
+}
+
+#header-name a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 34px;
+    color: #000; 
+}
+
+#header-name a:hover {
+    text-decoration: underline;
+}
+
+#header-description {
+    color: #333; 
+}
+
+#header .nav .item {
+    border-left: 1px solid #333; 
+    font-family: trebuchet ms;
+}
+
+#header .nav a {
+    font-weight: normal;
+    color: #333; 
+}
+
+#header .nav .current a {
+    font-weight: bold;  
+}  
+
+.connections-view #header-content {
+    padding: 0;
+}
+
+.connections-view #header-content-inner {
+    margin: 0;
+    padding: 0;
+}
+
+.connections-view #header-text { 
+    width: 816px; 
+}
+/* Content ---------------------------------------------------------- */
+.page-header1,
+.page-header1 a,
+.asset-subtitle {
+    color: #333;
+}
+
+.page-header2,
+.page-header2 a {
+    color: #333;
+}
+
+.asset-name a,
+.asset-name,
+.asset-stream-list .post-asset .asset-name a {
+    color: #000;
+}
+
+.asset-tags-list .asset-tags-add-tags:hover,
+.asset-description-hover,
+.asset-name-hover,
+.asset-privacy-hover {
+    background-color: #f8f8f8;
+}
+
+.asset-tags-list a:hover {
+    background-color: #000; 
+}
+
+.comment-even {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+}
+
+.asset-stream-grid .asset-name a,
+.enclosure-asset-name,
+.enclosure-asset-name a,
+#profile .user-favorites-list .asset-name a {
+    color: #000;
+}  
+.asset-stream-list .post-asset .asset-name a {
+    display: block;
+    margin-bottom: 8px;
+    border-bottom: #ccc solid 1px;
+    padding-bottom: .3em;
+    text-decoration: none;
+    width: 98%;  /*HACK IE6*/
+}
+
+.asset-stream-list .post-asset .asset-name a:hover,
+.asset-name a:hover {
+    text-decoration: underline;
+}
+
+.asset-detail .asset-name a,
+#profile .asset-name a  {
+    border-bottom: none;
+    padding-bottom: 0;
+}  
+.pager,
+.pager a {
+    color: #000;
+}
+.pager .item {
+    border-color: #000;
+} 
+
+#comment-form,
+.enclosure .enclosure-inner {
+    border-color: #ddd;
+}
+
+.asset-detail .asset-name a,
+#profile .asset-name a  {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.asset-list-grid .asset-image img {
+    border: 1px solid #999;
+}
+
+.asset-tags-header {
+    padding-right: 0.75em;
+}
+
+.recent-activity-posts {
+    clear: both;
+    margin-bottom: 0;
+}
+
+.recent-activity-posts .post-asset {
+    margin-bottom: 1em;
+} 
+
+.asset-stream-grid .asset-meta-comments a,
+.enclosure-comments a,
+.watched-asset-activity-item,
+#profile .asset-inner .asset-meta-comments a { 
+    color: #666; 
+}
+
+.post-asset .asset-body ul,
+.post-asset .asset-body ol { 
+    padding-left: 8px; 
+} 
+
+.post-asset .asset-body blockquote { 
+    background: url(blockquote.gif?v=1) no-repeat 12px 3px;
+    margin-left: 0;
+    padding-left: 29px; 
+}
+
+#post-asset-detail .asset-detail-meta-inner {
+    border-color: #ddd;
+}
+
+#comment-form textarea {
+    border: 1px solid #969696; 
+    border-right-color: #D4E5F2;
+    border-bottom-color: #D4E5F2;
+}
+
+.conduit-related-header {
+    background-color: #666;
+}
+
+.conduit-related-body {
+    border-color: #666;
+}
+
+#footer-ad {
+  background-color: #fff;
+}
+/* Widget ----------------------------------------------------------- */
+.widget a,
+.archive-widget .widget-list .item {
+    color: #666;
+}
+
+.widget-header,
+.widget-header a {
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.widget-header { 
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #ccc; 
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 0;
+    font-size: 14px; 
+    font-family: trebuchet ms; 
+    padding-bottom: .3em;
+    margin: 0 15px 8px 15px; 
+} 
+.powered-by-widget .widget-content {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #ccc;
+    padding-top: 6px; 
+    border: none; 
+} 
+    
+.widget-header .edit a  {
+    border-left-color: #333;
+    color: #333;
+    font-weight: normal;
+}
+
+.media-stream-widget img {
+    margin: 0;
+    padding: 0;
+    border-width: 1px;
+    border-style: solid;
+} 
+.widget-header .edit a,
+.archive-widget .widget-list .item a,
+.archive-widget .widget-list .item {
+    font-weight: normal;
+}
+/* Footer ----------------------------------------------------------- */
+#footer { 
+    background-color: #666; 
+}
+/* Icons  ----------------------------------------------------------- */
+.rating {
+    background-image: url(rating.png?v=1);
+}  
+.asset-rating .rating-hover {
+    background-image: url(rating-hover.png?v=1);
+}  
+.asset-tags-list .asset-tags-add-tags {
+    background-image: url(icon-add.gif?v=1);
+}  
+.asset-meta-privacy span {
+    background-image: url(icon-privacy.gif?v=1);
+}  
+.asset-meta-edit a {
+    background-image: url(icon-edit.gif?v=1);
+}  
+.asset-meta-delete a {
+    background-image: url(icon-delete.gif?v=1);
+}  
+.favorite-phrase,
+.asset-meta-favorite a.favorite-function,
+.watched-asset-activity-list .favorite-asset {
+    background-image: url(icon-favorite.gif?v=1);
+}  
+.asset-meta-favorite a.is-a-favorite {
+    background-image: url(icon-favorite-on.gif?v=1);
+}  
+/*.asset-meta-comments a,
+.enclosure-comments a,
+.watched-asset-activity-list .comment-asset {
+    background-image: url(icon-comment.gif?v=1);
+} */ 
+.photo-asset .asset-source {
+    background-image: url(icon-photo.gif?v=1);
+}  
+.book-asset .asset-source {
+    background-image: url(icon-book.gif?v=1);
+}  
+.audio-asset .asset-source {
+    background-image: url(icon-audio.gif?v=1);
+}  
+.video-asset .asset-source {
+    background-image: url(icon-video.gif?v=1);
+}  
+.comment-form-send-pvt-msg,
+.contact-me-list .contact-email,
+.widget-list .email {
+    background-image: url(icon-email.gif?v=1);
+}  
+.asset-containers .collection-asset,
+.collection-stream-widget .widget-list .item a {
+    background-image: url(icon-collection.gif?v=1);
+}  
+.offensive-phrase {
+    background-image: url(icon-flag.gif?v=1);
+}  
+.asset-containers-list .group-asset { 
+    background-image: url(../default/icon-group.gif?v=1); 
+}
+/* Groups ----------------------------------------------------------- */
+.group #content {
+    margin-top: 0;
+}
+
+.group #header-inner {
+    padding-bottom: 15px;
+}
+
+#group-nav {
+    border-color: #ddd;
+    background-color: ; 
+}
+
+.group-nav-list .item {
+    border-color: #000;
+}
+
+.group-button a {
+    background-color: #000;
+    border-color: #fff;
+    color: #fff;
+}
+
+.group-button a:hover {
+    background-color: #fff;
+    border-color: #000;
+    color: #000;
+}
+
+#group-home .ads-widget {
+    background-color: #fff;
+}
+
+.group-about {
+    background-color: ; 
+}
+
+.group-home .stream-content {
+    border-color: #ddd;
+}
+/* Custom Styles ---------------------------------------------------- */
+
+/* Utility ---------------------------------------------------------- */
+#header:after,
+#header-photo:after,
+#page-inner:after,
+#header-inner:after,
+#content:after,
+#alpha-inner:after,
+#beta-inner:after,
+#gamma-inner:after,
+.comment-body:after,
+#footer:after {
+    content: " ";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0.1px;
+    font-size: 0.1em;
+    line-height: 0;
+}
+
+
+#header-inner,
+#content-inner,
+#header-photo,
+.asset-body {
+    height: 1%;
+}
+
+/* file-end: stc/voxhtml/minimalist-white/screen.css 
+----------------------------------------------------------------------------------*/
