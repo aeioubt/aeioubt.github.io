@@ -1,0 +1,9 @@
+/* Изменение стилей форума при печати */
+*, div#pun-navlinks ul.container li a{
+	background-color: white !important;
+	background-image: none !important;
+	color:#000 !important;
+}
+@page{
+  size: A4 portrait !important;
+}

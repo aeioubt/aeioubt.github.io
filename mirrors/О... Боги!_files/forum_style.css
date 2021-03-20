@@ -1,0 +1,55 @@
+/* Инфо-панель */
+.info-table{
+  height:auto;
+  border:none !important;
+}
+.info-table td{
+  padding-left:.62em;
+}
+img.preview{
+  width:165px;
+  padding:.38em;
+  margin-left:.62em;
+  border:#ccc solid 1px;
+  border-radius:1em/1em;
+}
+.info-table td.iblock{
+  width:22%;
+}
+.info-table td.fblock{
+  width:45%;
+}
+.info-table td.hblock{
+  width:auto;
+}
+.info-table li{
+  list-style:none;
+  margin:.382em;
+}
+.info-table li a{
+  padding:0;
+  margin:0;
+}
+/* Активные темы */
+div#pun-category102{
+  margin-bottom:0px !important;
+}
+div#pun-category102 div.container table{
+  width:100%;
+  margin:.5em auto;
+}
+div#pun-category102 div.container table tbody.hasicon tr td.tcr{
+  width:100%;
+  padding:.382em 0.382em 0.382em 1em !important;
+  border:none !important; 
+  vertical-align: middle;
+}
+/* Сворачивание категорий */
+em.offctgr, 
+em.offctgr img{
+  display:block !important;
+  visibility:visible !important;
+}
+#pun-announcement em.offctgr{
+  margin-top:1.1em;
+}

@@ -1,0 +1,129 @@
+/* 
+	Resets defualt browser settings
+	reset.css
+*/
+#container:focus { outline:0; }
+#container a:active { outline:none; }
+#container ol,ul {
+	list-style: none;
+	color: #E8C79B;
+}
+
+#example {
+	width: 800px;
+	height: 270px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+#slides {
+	position:absolute;
+	top:15px;
+	left:4px;
+	z-index:100;
+}
+
+.slides_container {
+	width: 790px;
+	height: 250px;
+	overflow: hidden;
+	position: relative;
+}
+
+#slides .next,#slides .prev {
+	position: absolute;
+	top: 107px;
+	left: -53px;
+	width: 37px;
+	height: 37px;
+	display: block;
+	z-index: 101;
+	cursor:hand;
+}
+
+#slides .next {
+	left: 807px;
+}
+
+.pagination {
+	margin:26px auto 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+.caption {
+	position: absolute;
+	bottom: -1px;
+	width: 790px;
+	background: #000;
+	background: rgba(54, 20, 0, 0.5);
+	text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+	-webkit-font-smoothing: subpixel-antialiased;
+	left: 0px;
+	
+}
+
+.caption p {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 1.2em;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+
+#sliderdiv {
+	width: 790px;
+	height: 250px;
+}
+#video-slide {
+	width: 281px;
+	height: 250px;
+	float: left;
+	background-image: url(video-bg-slide.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+#text-slide {
+	width: 508px;
+	height: 250px;
+	float: left;
+	background-image: url(txt-bg-slide.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#youtube-frame {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+#blocktext {
+    font-family: Georgia, "Times New Roman", Times, serif;
+	padding-left: 45px;
+	padding-right: 40px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 16px;
+	color: #623100;
+}

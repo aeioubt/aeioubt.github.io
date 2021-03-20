@@ -1,0 +1,31 @@
+#popup2 {
+	position: fixed;
+	/*border: 8px solid #000;*/
+	width: 869px;
+	height: 618px;
+	/*background: #000;*/
+	margin: -309px 0 0 -434px;
+	left: 50%;
+	top: 50%;
+	display: none;
+	z-index: 1000;
+	border-radius: 8px;
+	padding: 0px;
+	padding-left: 114px;
+	padding-top: 129px;
+	background-image: url(images/bg_fon3.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#popup-close2 {
+	background: url(images/pop-close-over.png) center left no-repeat; 
+   	width: 35px;
+   	height: 34px;
+   	position: absolute;
+   	right: 60px;
+   	top: -10px;
+   	cursor: pointer;
+}
+#popup-close2:hover {
+	background: url(images/pop-close.png) center left no-repeat; 
+}
